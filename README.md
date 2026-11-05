@@ -16,9 +16,9 @@ The selection rules differ, so this is not an isolated weighting-only experiment
 
 | | Supplied weights | Unweighted legacy fit |
 |---|---|---|
-| Fitted matrix | [Matrix](weighted/matrices/nps_shms_newfit_25523_legacy.dat) | [Matrix](unweighted/matrices/nps_shms_newfit_25523_original.dat) |
-| Old residual summary | [PDF](weighted/plots/fit_opt_matrix_25523_legacy_old_matrix_diff.pdf) | [PDF](unweighted/plots/fit_opt_matrix_25523_original_old_matrix_diff.pdf) |
-| New residual summary | [PDF](weighted/plots/fit_opt_matrix_25523_legacy_new_matrix_diff.pdf) | [PDF](unweighted/plots/fit_opt_matrix_25523_original_new_matrix_diff.pdf) |
+| Fitted matrix | [Matrix](weighted/matrices/nps_shms_newfit_25523_legacy.dat) | [Matrix](unweighted/matrices/nps_shms_newfit_25523_unweighted.dat) |
+| Old residual summary | [PDF](weighted/plots/fit_opt_matrix_25523_legacy_old_matrix_diff.pdf) | [PDF](unweighted/plots/fit_opt_matrix_25523_unweighted_old_matrix_diff.pdf) |
+| New residual summary | [PDF](weighted/plots/fit_opt_matrix_25523_legacy_new_matrix_diff.pdf) | [PDF](unweighted/plots/fit_opt_matrix_25523_unweighted_new_matrix_diff.pdf) |
 | All plots | [Folder](weighted/plots/) | [Folder](unweighted/plots/) |
 | Numerical report | [JSON](weighted/fit_report.json) | [JSON](unweighted/fit_report.json) |
 
