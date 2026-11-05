@@ -1,0 +1,90 @@
+{
+  "solver": "Repository legacy ROOT TDecompSVD on unscaled X^T W X; weights applied once",
+  "repository_ref": "hms-shms-campaign-switch 21c5d8e439a16e440ecd0307fa20a086d550d143",
+  "solver_details": {
+    "terms": 126,
+    "retained": 98,
+    "events": 433019,
+    "root_tolerance": 2.220446049250313e-16,
+    "cutoff": 9.627974342807422e-11
+  },
+  "balancing": "equal occupied foil-hole-1% delta cells",
+  "fit_events": 433019,
+  "held_out_events": 0,
+  "delta_and_xtar_dependent_rows_preserved": true,
+  "xptar_geometry_changed": false,
+  "external_xptar_offset_rad": -0.0008681269905,
+  "metrics_units": [
+    "slope",
+    "m",
+    "slope"
+  ],
+  "unweighted_metrics": {
+    "starting_same_xtarT": {
+      "count": 433019,
+      "rmse": [
+        0.0017152348116797013,
+        0.009243657913989997,
+        0.0035324106527662344
+      ],
+      "median": [
+        -0.0001580533405620005,
+        0.0009034690862778605,
+        -0.0007625686806474585
+      ],
+      "abs_p95": [
+        0.003361652184103357,
+        0.019302081170201,
+        0.0070591467502281215
+      ]
+    },
+    "new_root_legacy": {
+      "count": 433019,
+      "rmse": [
+        0.0015603833904271726,
+        0.0006233656754203691,
+        0.0009685539326339022
+      ],
+      "median": [
+        1.4969578052124706e-05,
+        -1.6612355510442424e-06,
+        2.3079116330459656e-05
+      ],
+      "abs_p95": [
+        0.003102253934435779,
+        0.0011341074165107398,
+        0.0018884334053146268
+      ]
+    },
+    "original_replay": {
+      "count": 433019,
+      "rmse": [
+        0.0016366038906627854,
+        0.009426331414469382,
+        0.0035945272857643967
+      ],
+      "median": [
+        -0.00016999369829851646,
+        0.0009048447185167375,
+        -0.0007633990575610303
+      ],
+      "abs_p95": [
+        0.003224721821589778,
+        0.01942272448202785,
+        0.007138313678534645
+      ]
+    }
+  },
+  "weighted_rmse_mrad_mm_mrad": {
+    "starting_same_xtarT": [
+      2.0949701135285235,
+      14.788640370323883,
+      5.667711473162795
+    ],
+    "new_root_legacy": [
+      1.6252350889154792,
+      0.6019094596560532,
+      1.1521868166303044
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "dataset": "Data 0",
+  "data_version": "0.1.0",
+  "run": 25523,
+  "events": 433019,
+  "TFit_branches": 57,
+  "source_data_0_fields": [
+    "run",
+    "entry",
+    "source_row",
+    "cluster_id",
+    "raw_cluster_id",
+    "component_id",
+    "hole_col",
+    "hole_row",
+    "fp_x_cm",
+    "fp_y_cm",
+    "fp_xp_rad",
+    "fp_yp_rad",
+    "raster_x_raw_adc",
+    "raster_y_raw_adc",
+    "delta_percent",
+    "sieve_x_reco_cm",
+    "sieve_y_reco_cm",
+    "z_tar_reco_cm",
+    "membership_probability",
+    "legacy_split",
+    "review_required",
+    "MC_own_supported",
+    "MC_registration_disagreement",
+    "MC_half_agreement"
+  ],
+  "source_release": "outputs\\data_0_run25523_v0_1_20261026",
+  "source_data_0_sha256": "0a4908ae9097f829842a00272607d5f06c9dc4b802617885227084090873baab",
+  "source_manifest_sha256": "7eb40ed90bdb0c5edbab356f16e895f24404cb524bba76dfbe26e8b109857b66",
+  "source_skim": {
+    "path": "RootData\\single_foil_20260928\\skimmed_shms_coin_replay_production_25523_-1.root",
+    "sha256": "137712c11f15a01291f0525451835d07d3e2e0c4a9550fb0d36870095aa871e2",
+    "entry_namespace": "entry"
+  },
+  "full_replay": {
+    "path": "RootData\\shms_coin_replay_production_25523_-1.root",
+    "sha256": "f3ca5c105c749637a09fe7ed6934940ca222d45ab86743d51668c4463c350699",
+    "entries": 2051311,
+    "entry_namespace": "source_full_entry"
+  },
+  "source_alignment_report": {
+    "status": "PASS",
+    "matched_events": 433019,
+    "source_skim_entries": 979508,
+    "source_full_entries": 2051311,
+    "join_key": [
+      "P_dc_x_fp",
+      "P_dc_xp_fp",
+      "P_dc_y_fp",
+      "P_dc_yp_fp"
+    ],
+    "join_key_unique": true,
+    "full_matches_exact": true,
+    "data0_fp_matches_skim": true,
+    "alignment_file": "experiments\\data_0_svd_handoff_20261026\\source_alignment.npz",
+    "all_source_columns_exact": true,
+    "source_column_count": 28,
+    "source_column_exact": {
+      "P_gtr_x": true,
+      "P_gtr_y": true,
+      "P_gtr_dp": true,
+      "P_gtr_p": true,
+      "P_gtr_ph": true,
+      "P_gtr_th": true,
+      "P_gtr_beta": true,
+      "P_gtr_index": true,
+      "P_dc_x_fp": true,
+      "P_dc_y_fp": true,
+      "P_dc_xp_fp": true,
+      "P_dc_yp_fp": true,
+      "P_ngcer_npeSum": true,
+      "P_hgcer_npeSum": true,
+      "P_aero_npeSum": true,
+      "P_cal_etottracknorm": true,
+      "P_react_x": true,
+      "P_react_y": true,
+      "P_react_z": true,
+      "P_hod_goodstarttime": true,
+      "P_kin_x_bj": true,
+      "P_kin_Q2": true,
+      "P_kin_nu": true,
+      "P_kin_W": true,
+      "P_rb_raster_frxaRawAdc": true,
+      "P_rb_raster_frxbRawAdc": true,
+      "P_rb_raster_fryaRawAdc": true,
+      "P_rb_raster_frybRawAdc": true
+    },
+    "replay_readback": {
+      "matrix_file": "outputs\\svd_handoff_25521_20260923\\base_matrix.dat",
+      "matrix_sha256": "f79a81aa3b74b8c9adcbfd0a88ebb149bdf52613a38d4d99e1e0a5a6389e6002",
+      "compared_events": 433019,
+      "outputs": {
+        "xptar_rad": {
+          "finite_events": 433019,
+          "max_abs": 3.608224830031759e-16,
+          "rmse": 2.0587051007326143e-17,
+          "p95_abs": 4.163336342344337e-17
+        },
+        "ytar_m": {
+          "finite_events": 433019,
+          "max_abs": 1.0269562977782698e-15,
+          "rmse": 3.8557613659455546e-17,
+          "p95_abs": 8.153200337090993e-17
+        },
+        "yptar_rad": {
+          "finite_events": 433019,
+          "max_abs": 2.636779683484747e-16,
+          "rmse": 1.4264162602493726e-17,
+          "p95_abs": 2.949029909160572e-17
+        },
+        "delta_percent": {
+          "finite_events": 433019,
+          "max_abs": 9.592326932761353e-14,
+          "rmse": 5.578249490322812e-15,
+          "p95_abs": 1.2434497875801753e-14
+        }
+      },
+      "all_four_outputs_exact": true,
+      "readback_equation": "y=(-z-beam_x*yptar)*sin_eff+(beam_x-z*yptar)*cos_eff-mis_y",
+      "geometry_fit_events": 346415,
+      "geometry_holdout_events": 86604,
+      "inferred_sin_eff": 0.23353013025082106,
+      "inferred_cos_eff": 0.9723491783411763,
+      "inferred_effective_angle_deg": 13.504999999999907,
+      "inferred_mispoint_y_cm": -0.06000000000000005,
+      "fit_closure_cm": {
+        "finite_events": 346415,
+        "max_abs": 1.1546319456101628e-13,
+        "rmse": 5.294711140216401e-15,
+        "p95_abs": 1.1213252548714081e-14
+      },
+      "holdout_closure_cm": {
+        "finite_events": 86604,
+        "max_abs": 7.72715225139109e-14,
+        "rmse": 5.264414117081422e-15,
+        "p95_abs": 1.1213252548714081e-14
+      },
+      "legacy_mispoint_x_cm": -0.126,
+      "extended_target_iterations": 5,
+      "extended_target_reconstruction_x_cm": {
+        "finite_events": 433019,
+        "max_abs": 2.4868995751603507e-14,
+        "rmse": 6.607850973469629e-16,
+        "p95_abs": 1.1379786002407855e-15
+      },
+      "interpretation": "Replay self-consistency diagnostic using the legacy 25521 equation; not independent geometry or physical truth."
+    },
+    "replay_configuration_evidence": {
+      "runlist_target": "C",
+      "runlist_signed_shms_p0_GeV_c": -6.358,
+      "runlist_shms_angle_deg": 13.505,
+      "kinematics_ptheta_lab_deg": 13.495,
+      "ppcentral_offset_percent": -0.4,
+      "replay_p0_magnitude_GeV_c": 6.332568,
+      "pphi_offset_rad": -0.0008681269905,
+      "ptheta_offset_rad": 0.0,
+      "pdelta_offset_percent": 0.0,
+      "source_status": "Historical public replay snapshot; not proven to be the exact pass used for this ROOT."
+    }
+  },
+  "source_alignment_sha256": "0858602a09d5cc8ece8e12c0e8826646bbbcadd90e273108d86652970d85af10",
+  "legacy_split_counts": {
+    "0": 260173,
+    "1": 43050,
+    "2": 43217,
+    "3": 86579
+  },
+  "fit_events": 260173,
+  "diagnostic_holdout_events": 172846,
+  "review_required_events": 174110,
+  "unchanged_selection_and_labels": true,
+  "new_MC_assignment": false,
+  "physical_accuracy_verified": false,
+  "independent_blind_validation": false,
+  "builder": "experiments\\data_0_svd_handoff_20261026\\build_handoff.py",
+  "builder_sha256": "090063f0e6e67ba74b4b329e0baa2f8c264f35bd6fbb3939c55c89534281f9c1"
+}

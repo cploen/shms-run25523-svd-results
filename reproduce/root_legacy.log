@@ -1,0 +1,193 @@
+Processing /workspace/shms_run25523/fit_opt_matrix_gmm_legacy.C+("25523_legacy",-1,433019,-1,"/workspace/shms_run25523/SHMS_legacy_25523/trees","/workspace/shms_run25523/result_root_legacy","/workspace/shms_run25523/handoff/base_matrix.dat","/workspace/shms_run25523/SHMS_legacy_25523/rungroups_inputs.tsv","/workspace/shms_run25523/SHMS_legacy_25523/optics_metadata.dat")...
+Info in <TUnixSystem::ACLiC>: creating shared library /workspace/shms_run25523/fit_opt_matrix_gmm_legacy_C.so
+Warning in cling::IncrementalParser::CheckABICompatibility():
+  Possible C++ standard library mismatch, compiled with __GLIBCXX__ '20250110'
+  Extraction of runtime standard library version was: '20250315'
+Spectrometer: SHMS; centered sieve; delta=(-10,22) percent
+Campaign settings read from: /workspace/shms_run25523/SHMS_legacy_25523/rungroups_inputs.tsv
+Number of settings: 1
+Open  Old coeff file = /workspace/shms_run25523/handoff/base_matrix.dat
+ skipped 6 comments lines in file : /workspace/shms_run25523/handoff/base_matrix.dat
+ at line =  ---------------------------------------------------------------------
+ skipped 1 separation lines in file : /workspace/shms_run25523/handoff/base_matrix.dat
+      0.277714223    -0.046726452    0.0303003269     0.667153399 10000
+num recon terms in OLD matrix = 131
+num recon terms in fit matrix = 126
+num recon terms in xtar matrix = 6
+ Open file = /workspace/shms_run25523/SHMS_legacy_25523/optics_metadata.dat
+ nd = 0 -25
+ nd = 1 -6
+ nd = 2 -2
+ nd = 3 2
+ nd = 4 6
+ nd = 5 10
+25523 run25523 13.505 1 1
+ INfile = /workspace/shms_run25523/SHMS_legacy_25523/trees/Optics_25523_-1_fit_tree_gmm.root
+ counts foil 0 : 433019
+ ztar = 0
+ Ndelta = -15.5
+0 17919 32516 47371 37509 31221 26167 16600 6228 23 0 
+ Ndelta = -4
+0 10366 13683 14196 10378 8333 7291 5357 2825 167 0 
+ Ndelta = 0
+0 8374 11303 10362 6689 5256 4540 3099 1651 443 0 
+ Ndelta = 4
+0 5722 7007 6531 4518 3962 3872 3040 1895 809 0 
+ Ndelta = 8
+0 3536 4862 4550 2980 2882 2763 2039 1267 556 0 
+ Ndelta = 16
+0 4081 6734 6195 3497 3155 3124 2021 1089 465 0 
+ number to fit = 433019 max = 433019
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+45000
+50000
+55000
+60000
+65000
+70000
+75000
+80000
+85000
+90000
+95000
+100000
+105000
+110000
+115000
+120000
+125000
+130000
+135000
+140000
+145000
+150000
+155000
+160000
+165000
+170000
+175000
+180000
+185000
+190000
+195000
+200000
+205000
+210000
+215000
+220000
+225000
+230000
+235000
+240000
+245000
+250000
+255000
+260000
+265000
+270000
+275000
+280000
+285000
+290000
+295000
+300000
+305000
+310000
+315000
+320000
+325000
+330000
+335000
+340000
+345000
+350000
+355000
+360000
+365000
+370000
+375000
+380000
+385000
+390000
+395000
+400000
+405000
+410000
+415000
+420000
+425000
+430000
+LEGACY_NORMAL_EQ terms=126 retained=98 tol=2.2204460492503131e-16 cutoff=9.6279743428074216e-11
+ytar solution ok = 1
+yptar solution ok = 1
+xptar solution ok = 1
+writing new coeffs file
+wrote new coeffs file
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      = 75954.203871795529
+NDf                       =           67
+Edm                       = 2.4731760051027684e-06
+NCalls                    =          111
+Constant                  = 42252.028729123704   +/-   135.2685395763589
+Mean                      = 0.10542633869274133   +/-   0.0011236409726972435
+Sigma                     = 0.47961724988779414   +/-   0.0013070483498139884 	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      = 34223.641731397278
+NDf                       =           97
+Edm                       = 1.8323211250956575e-08
+NCalls                    =           79
+Constant                  = 14230.064965469115   +/-   35.346114299158614
+Mean                      = -0.85048205073925753   +/-   0.0040202955129611181
+Sigma                     = 2.1824472113798414   +/-   0.0041412022988440711 	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      = 14148.576834218762
+NDf                       =           97
+Edm                       = 1.2011384726351353e-07
+NCalls                    =           67
+Constant                  = 35820.14807341394   +/-   78.444010276476533
+Mean                      = -0.15639601484479362   +/-   0.0021665256976523988
+Sigma                     = 1.3991268050263239   +/-   0.0021705126344253589 	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      = 0.98919909230783976
+NDf                       =            1
+Edm                       = 5.7640431395959682e-07
+NCalls                    =           78
+Constant                  = 384848.9497698929   +/-   1007.9307845523623
+Mean                      = -0.00012020999250620117   +/-   8.9612393553656483e-05
+Sigma                     = 0.066064370200988695   +/-   0.00011225785713152997 	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      = 3264.1529430854066
+NDf                       =           82
+Edm                       = 2.1109857937079588e-06
+NCalls                    =           60
+Constant                  = 37067.81889523688   +/-   72.680339703072349
+Mean                      = 0.022241474538190965   +/-   0.0014110981143445646
+Sigma                     = 0.92504328516976442   +/-   0.0011394345212693002 	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      = 14273.884736219607
+NDf                       =           97
+Edm                       = 1.0297500380643047e-06
+NCalls                    =           65
+Constant                  = 38023.881968296737   +/-   82.184890968434516
+Mean                      = -0.00095437636036491689   +/-   0.0020416891836368477
+Sigma                     = 1.3178009138239188   +/-   0.0019907656353701508 	 (limited)
+Info in <TCanvas::Print>: pdf file /workspace/shms_run25523/result_root_legacy/plots/fit_opt_matrix_25523_legacy_old_matrix_diff.pdf has been created
+Info in <TCanvas::Print>: pdf file /workspace/shms_run25523/result_root_legacy/plots/fit_opt_matrix_25523_legacy_new_matrix_diff.pdf has been created
+Saved matrix QA PDFs:
+  /workspace/shms_run25523/result_root_legacy/plots/fit_opt_matrix_25523_legacy_old_matrix_diff.pdf
+  /workspace/shms_run25523/result_root_legacy/plots/fit_opt_matrix_25523_legacy_new_matrix_diff.pdf
+Saved matrix QA ROOT: /workspace/shms_run25523/result_root_legacy/root/fit_opt_matrix_25523_legacy_qa.root

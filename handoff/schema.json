@@ -1,0 +1,299 @@
+{
+  "format": "SHMS TFit Data 0 handoff",
+  "schema_version": "1.0.0",
+  "tree": "TFit",
+  "event_key": [
+    "run",
+    "entry"
+  ],
+  "source_entry_namespace": "source skim T",
+  "all_original_data_0_fields_preserved": true,
+  "fields": {
+    "run": {
+      "dtype": "int32",
+      "unit": "1",
+      "description": "Run number"
+    },
+    "entry": {
+      "dtype": "int64",
+      "unit": "1",
+      "description": "Zero-based entry in the source skim T tree"
+    },
+    "source_row": {
+      "dtype": "int64",
+      "unit": "1",
+      "description": "Row in the frozen 531390-event selected sample"
+    },
+    "cluster_id": {
+      "dtype": "int16",
+      "unit": "1",
+      "description": "Unchanged original indexed cluster; weak label"
+    },
+    "raw_cluster_id": {
+      "dtype": "int64",
+      "unit": "1",
+      "description": "Original pre-indexing density cluster identifier"
+    },
+    "component_id": {
+      "dtype": "int32",
+      "unit": "1",
+      "description": "Frozen within-parent FP4D density component identifier"
+    },
+    "hole_col": {
+      "dtype": "int16",
+      "unit": "1",
+      "description": "Original weak sieve-hole column"
+    },
+    "hole_row": {
+      "dtype": "int16",
+      "unit": "1",
+      "description": "Original weak sieve-hole row"
+    },
+    "fp_x_cm": {
+      "dtype": "float32",
+      "unit": "cm",
+      "description": "P.dc.x_fp"
+    },
+    "fp_y_cm": {
+      "dtype": "float32",
+      "unit": "cm",
+      "description": "P.dc.y_fp"
+    },
+    "fp_xp_rad": {
+      "dtype": "float32",
+      "unit": "rad",
+      "description": "P.dc.xp_fp"
+    },
+    "fp_yp_rad": {
+      "dtype": "float32",
+      "unit": "rad",
+      "description": "P.dc.yp_fp"
+    },
+    "raster_x_raw_adc": {
+      "dtype": "float32",
+      "unit": "ADC",
+      "description": "P.rb.raster.frxbRawAdc"
+    },
+    "raster_y_raw_adc": {
+      "dtype": "float32",
+      "unit": "ADC",
+      "description": "P.rb.raster.frybRawAdc"
+    },
+    "delta_percent": {
+      "dtype": "float64",
+      "unit": "percent",
+      "description": "P.gtr.dp"
+    },
+    "sieve_x_reco_cm": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "P.gtr.x + 253*P.gtr.th; reconstructed, not MC truth"
+    },
+    "sieve_y_reco_cm": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "P.gtr.y + 253*P.gtr.ph - .0398*delta + .000398*delta**2"
+    },
+    "z_tar_reco_cm": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "P.react.z"
+    },
+    "membership_probability": {
+      "dtype": "float64",
+      "unit": "1",
+      "description": "Original density membership strength, not label purity"
+    },
+    "legacy_split": {
+      "dtype": "int8",
+      "unit": "1",
+      "description": "Inherited contiguous entry split: 0 FIT, 1 CAL, 2 VAL, 3 TEST; not independent truth"
+    },
+    "review_required": {
+      "dtype": "bool",
+      "unit": "1",
+      "description": "Retained uncertainty or reversible pending holdout; not a physical-purity flag"
+    },
+    "MC_own_supported": {
+      "dtype": "bool",
+      "unit": "1",
+      "description": "Registered own-hole compatibility under weak-anchor support envelope"
+    },
+    "MC_registration_disagreement": {
+      "dtype": "bool",
+      "unit": "1",
+      "description": "Raw MC and frozen registered MC prefer different holes"
+    },
+    "MC_half_agreement": {
+      "dtype": "bool",
+      "unit": "1",
+      "description": "Both disjoint MC reference halves prefer the same hole as the full reference"
+    },
+    "source_full_entry": {
+      "dtype": "int64",
+      "unit": "1",
+      "description": "Zero-based entry in the full original replay T, exact joined; entry remains the source skim entry"
+    },
+    "cluster": {
+      "dtype": "int32",
+      "unit": "1",
+      "description": "Alias of unchanged original cluster_id"
+    },
+    "foil_rank": {
+      "dtype": "int8",
+      "unit": "1",
+      "description": "0: nominal single carbon foil at z=0 cm; not the old three-foil ranking"
+    },
+    "label_status": {
+      "dtype": "int8",
+      "unit": "1",
+      "description": "1: retained Data 0 weak-label nominal-fit candidate; not independently anchored physical truth"
+    },
+    "train": {
+      "dtype": "bool",
+      "unit": "1",
+      "description": "legacy_split == 0; all other legacy partitions are same-run diagnostic holdout"
+    },
+    "xfp": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.dc.x_fp; original fp_x_cm float32 also preserved"
+    },
+    "xpfp": {
+      "dtype": "float64",
+      "unit": "slope",
+      "description": "Full replay P.dc.xp_fp; original fp_xp_rad float32 also preserved"
+    },
+    "yfp": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.dc.y_fp; original fp_y_cm float32 also preserved"
+    },
+    "ypfp": {
+      "dtype": "float64",
+      "unit": "slope",
+      "description": "Full replay P.dc.yp_fp; original fp_yp_rad float32 also preserved"
+    },
+    "xtar": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Geometry xtarT supplied for the fixed xtar matrix contribution; old reconstruction in xtar_replay"
+    },
+    "xptar": {
+      "dtype": "float64",
+      "unit": "slope",
+      "description": "Full replay P.gtr.th, diagnostic only"
+    },
+    "ytar": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.gtr.y, diagnostic only"
+    },
+    "yptar": {
+      "dtype": "float64",
+      "unit": "slope",
+      "description": "Full replay P.gtr.ph, diagnostic only"
+    },
+    "ztar": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.react.z, diagnostic only"
+    },
+    "delta": {
+      "dtype": "float64",
+      "unit": "percent",
+      "description": "Full replay P.gtr.dp, inherited; momentum is not refitted"
+    },
+    "xs": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Unchanged reconstructed sieve_x_reco_cm, diagnostic only"
+    },
+    "ys": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Unchanged reconstructed sieve_y_reco_cm, diagnostic only"
+    },
+    "reactxcalc": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.react.x, diagnostic only"
+    },
+    "reactycalc": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.react.y, diagnostic only"
+    },
+    "xtar_replay": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.gtr.x, diagnostic only"
+    },
+    "beam_x_cm": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.rb.x; includes BPM/raster, do not add raw ADC again"
+    },
+    "beam_y_cm": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Full replay P.rb.y; includes BPM/raster, do not add raw ADC again"
+    },
+    "xtarT": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "ytarT": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "xptarT": {
+      "dtype": "float64",
+      "unit": "slope",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "yptarT": {
+      "dtype": "float64",
+      "unit": "slope",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "ztarT": {
+      "dtype": "int64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "xsT": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "ysT": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "vertex_x_transport": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "vertex_y_transport": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "vertex_z_transport": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    },
+    "hb_y_correction_cm": {
+      "dtype": "float64",
+      "unit": "cm",
+      "description": "Nominal geometry constraint from the unchanged weak hole label, replay beam and geometry.json; not independent truth"
+    }
+  },
+  "physical_accuracy_verified": false
+}
