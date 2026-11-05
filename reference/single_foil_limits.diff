@@ -1,0 +1,20 @@
+--- original/fit_opt_matrix_gmm.C
++++ single_foil_limits/fit_opt_matrix_gmm.C
+@@ -122,7 +122,7 @@
+   string oldcoeffsfilename = oldCoeffsFile.Data();
+   int nfit=0,npar,nfit_max=nfit_max_arg,npar_final=0,max_order=6,norder;
+   Int_t MaxPerBin=1000;
+-  Int_t MaxZtarPerBin=15000;
++  Int_t MaxZtarPerBin=nfit_max_arg;
+ 
+   //
+   TH1F *hDelta = new TH1F("hDelta","Delta ",20,-10.,30.);
+@@ -466,7 +466,7 @@
+     }
+     //
+     for (Int_t nf=0;nf<maxFoils;nf++) {//max foils
+-      Max_Per_Run_Per_Foil[nf] = 30000;//check this number?
++      Max_Per_Run_Per_Foil[nf] = nfit_max_arg;//check this number?
+       Ztar_Cnts[nf]=0;
+       for (Int_t nd=0;nd<maxDel;nd++) {//max del cut
+ 	for (Int_t ny=0;ny<nysieve;ny++) {	

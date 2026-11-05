@@ -1,0 +1,113 @@
+{
+  "historical_commit": "3b93f6e3a25a4078fa73bc8f46ecf8624d4d0bba",
+  "fitter_byte_identical": false,
+  "changes": "two foil-total caps raised to input-event limit; numerical solve unchanged",
+  "fitter_sha256": "864e58096706b55be6b5bd55b2d702137572732a5941509d078533bfa18afe43",
+  "input_events": 433019,
+  "fit_events": 50463,
+  "no_holdout": true,
+  "weighting": "none; unweighted X^T X",
+  "selection": "original event order, -15<delta<30 plus metadata, 1000 per delta/sieve-column bin, foil-total caps lifted to 433019 for this one-foil input, overall argument 433019",
+  "accepted_delta_sieve_counts": [
+    [
+      0,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      23,
+      0
+    ],
+    [
+      0,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      167,
+      0
+    ],
+    [
+      0,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      443,
+      0
+    ],
+    [
+      0,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      809,
+      0
+    ],
+    [
+      0,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      556,
+      0
+    ],
+    [
+      0,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      465,
+      0
+    ]
+  ],
+  "new_matrix_rmse_on_fit_events_mrad_mm_mrad": [
+    1.2252546393182604,
+    0.6201505493269449,
+    1.068350710334821
+  ],
+  "stored_replay_rmse_on_fit_events_mrad_mm_mrad": [
+    1.3142625405657016,
+    5.692202725203132,
+    2.3376698478506763
+  ],
+  "new_matrix_rmse_on_all_input_events_mrad_mm_mrad": [
+    1.6646030567754158,
+    0.6279336904888688,
+    1.0099059377121549
+  ],
+  "fixed_xtar_rows_and_delta_preserved": true,
+  "output_slope_offsets_rad": {
+    "xptar": 0.0,
+    "yptar": 0.0
+  },
+  "note": "Historical fitter solves full supplied slopes without subtracting external offsets. Its output includes the constant offset; do not additionally apply the starting matrix pphi offset.",
+  "reference_fitter_sha256": "643ab237a3231bb3a4da573fb68ff21d3dd08ebc78588a16a1ba47eeca69512d"
+}
