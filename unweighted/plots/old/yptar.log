@@ -1,0 +1,35 @@
+Processing /workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C(25523,"/workspace/shms_run25523_original/diagnostic_inputs/SHMS_run25523/old.root","/workspace/shms_run25523_results/config/SHMS_run25523/optics_metadata.dat","/workspace/shms_run25523_results/unweighted/plots/old","25523_old")...
+In file included from input_line_8:1:
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:202:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* can2d[NumFoil];
+                       ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:202:17: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:242:18: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* candel[NumFoil];
+                        ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:242:18: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:243:26: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgr[NumFoil];
+                         ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:243:26: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:244:22: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *leg[NumFoil];
+                     ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:244:22: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_yptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+Spectrometer: SHMS; centered sieve; delta=(-10,22) percent
+Metadata: 1 foils; 7 delta boundaries; 6 intervals
+ start loop 50463
+Info in <TCanvas::Print>: pdf file /workspace/shms_run25523_results/unweighted/plots/old/25523_old_yptar_residuals.pdf has been created
+Info in <TCanvas::Print>: pdf file /workspace/shms_run25523_results/unweighted/plots/old/25523_old_yptar_residuals_by_sieve.pdf has been created

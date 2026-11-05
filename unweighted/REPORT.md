@@ -35,3 +35,19 @@ The separate weighted output expects its external xptar offset to remain applied
 Old shows the stored starting replay minus the supplied target for the 50463 selected events. New shows the legacy fitted-matrix residuals for those same events. The native plot calculations and histogram ranges are unchanged. A neutral method banner is added to published PDFs; the ROOT QA file retains native canvases.
 
 No supplied geometric target, label, review flag or branch value was changed. This is one run's weak-label geometric fit, not a new HCANA replay, independent label validation, or measurement of multi-foil resolution.
+
+## Full legacy diagnostic suite
+
+The `plots/old/` and `plots/new/` folders now contain matching xptar, yptar and ytar diagnostics, including sieve/delta breakdowns. Both use exactly the 50,463 events admitted by the unweighted fit; accepted cell counts are checked against fit_report.json. The starting matrix is evaluated at supplied xtar/xtarT with its original external xptar offset, and the new unweighted matrix is evaluated at the same inputs with zero external slope offsets. Thus these detailed old/new plots compare matrices on identical inputs. The two automatic summary PDFs retain their original stored-replay-vs-target old residuals, as described above.
+
+Some inherited residual axis titles say target-minus-reconstructed even though the actual fill is reconstructed-minus-target; their source calculations are retained.
+
+All three original plotting macros are unchanged exports from commit 3b93f6e and are available in diagnostics/fit/. The Python helper prepares plotting-only trees and invokes these macros; it does not perform a fit. Neither matrix was changed to add these plots. These remain matrix evaluations, not a new HCANA replay. Neutral method banners are added to every PDF page; ROOT plot files retain native canvases.
+
+Recreate from the original input ROOT file with ROOT, numpy and uproot active:
+
+    python diagnostics/make_unweighted_plots.py /path/to/shms_25523_data_0_fit.root /path/to/temporary_plot_inputs
+
+Then, with PyMuPDF and pypdf installed, add PDF banners:
+
+    python diagnostics/label_plot_pdfs.py unweighted/plots/old unweighted/plots/new --label "UNWEIGHTED LEGACY FIT | 50,463 fitted events | original bin caps | X^T X"

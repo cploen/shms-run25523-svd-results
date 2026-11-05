@@ -1,0 +1,75 @@
+Processing /workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C(25523,"/workspace/shms_run25523_original/diagnostic_inputs/SHMS_run25523/new.root","/workspace/shms_run25523_results/config/SHMS_run25523/optics_metadata.dat","/workspace/shms_run25523_results/unweighted/plots/new","25523_new")...
+In file included from input_line_8:1:
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:307:31: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* canFoilDel[NumFoil][ndelcut];
+                                     ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:307:31: note: initializer of 'ndelcut' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:74:14: note: declared here
+ const Int_t ndelcut=delcut.size()-1;
+             ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:307:22: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* canFoilDel[NumFoil][ndelcut];
+                            ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:307:22: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:308:42: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgrFoilDel[NumFoil][ndelcut];
+                                         ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:308:42: note: initializer of 'ndelcut' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:74:14: note: declared here
+ const Int_t ndelcut=delcut.size()-1;
+             ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:308:33: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgrFoilDel[NumFoil][ndelcut];
+                                ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:308:33: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:309:38: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *legFoilDel[NumFoil][ndelcut];
+                                     ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:309:38: note: initializer of 'ndelcut' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:74:14: note: declared here
+ const Int_t ndelcut=delcut.size()-1;
+             ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:309:29: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *legFoilDel[NumFoil][ndelcut];
+                            ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:309:29: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:333:18: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* candel[NumFoil];
+                        ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:333:18: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:334:26: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgr[NumFoil];
+                         ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:334:26: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:335:22: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *leg[NumFoil];
+                     ^~~~~~~
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:335:22: note: initializer of 'NumFoil' is not a constant expression
+/workspace/shms_run25523_results/diagnostics/fit/plot_xptar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+Spectrometer: SHMS; centered sieve; delta=(-10,22) percent
+Metadata: 1 foils; 7 delta boundaries; 6 intervals
+ start loop 50463
+Info in <TCanvas::Print>: pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals.pdf has been created using the current canvas
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals.pdf and file closed
+Info in <TCanvas::Print>: pdf file /workspace/shms_run25523_results/unweighted/plots/new/25523_new_xptar_residuals_by_sieve.pdf has been created
