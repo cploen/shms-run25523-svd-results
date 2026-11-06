@@ -4,10 +4,15 @@
   "accepted_cell_counts_match_fit": true,
   "matrix_hashes": {
     "config/base_matrix.dat": "f79a81aa3b74b8c9adcbfd0a88ebb149bdf52613a38d4d99e1e0a5a6389e6002",
-    "unweighted/matrices/nps_shms_newfit_25523_unweighted.dat": "266a98c97e47ceff052f7410efe9d02666c88f99ebee38ff96ac0e11a6e3197e"
+    "unweighted/matrices/nps_shms_newfit_25523_unweighted.dat": "23fdb3e4c7e1156e113392120f849128018a0cf4b1754c3227168ae1c4e4c52e"
   },
   "old": "base matrix evaluated at supplied xtar/xtarT plus starting external xptar offset",
   "new": "unweighted emitted matrix evaluated at supplied xtar/xtarT with zero external slope offsets",
   "fresh_HCANA_replay": false,
-  "plot_macro_commit": "3b93f6e3a25a4078fa73bc8f46ecf8624d4d0bba"
+  "plot_macro_commit": "3b93f6e3a25a4078fa73bc8f46ecf8624d4d0bba",
+  "matrix_hashes_at_plot_generation": {
+    "config/base_matrix.dat": "f79a81aa3b74b8c9adcbfd0a88ebb149bdf52613a38d4d99e1e0a5a6389e6002",
+    "unweighted/matrices/nps_shms_newfit_25523_unweighted.dat": "266a98c97e47ceff052f7410efe9d02666c88f99ebee38ff96ac0e11a6e3197e"
+  },
+  "format_only_repair": "matrix text gained opening separator after plotting; coefficients and plots unchanged"
 }

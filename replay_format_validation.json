@@ -1,0 +1,81 @@
+{
+  "test": "verbatim HCANA ReadDatabase matrix-reader block plus verbatim current writer block",
+  "hcana_commit": "fcef8e23e16228fbb930078b9c44ef5031bed4f9",
+  "reader_block_sha256": "90066ae0ae612e7bfdd7dc317198387981264a21f79ea29ed1049640e120552e",
+  "fitter_sha256": "fa02db9c98fc0e27ba4172b94396205fc1e89710d4dbf3a59a66968a38bf22bf",
+  "positive_cases": [
+    {
+      "file": "weighted/matrices/nps_shms_newfit_25523_legacy.dat",
+      "terms_read": 132,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "unweighted/matrices/nps_shms_newfit_25523_unweighted.dat",
+      "terms_read": 132,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "config/base_matrix.dat",
+      "terms_read": 131,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "/workspace/nps_replay/DATFILES/nps_hms_optics_5p878_ang.dat",
+      "terms_read": 461,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "/workspace/nps_replay/DATFILES/nps_hms_optics_6p117_ang.dat",
+      "terms_read": 461,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "/workspace/nps_replay/DATFILES/nps_hms_optics_6p667_ang.dat",
+      "terms_read": 461,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "generated_writer_fixture.dat",
+      "terms_read": 3,
+      "exact_coefficients_and_exponents": true
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "missing_opening_separator",
+      "rejected": true
+    },
+    {
+      "case": "two_leading_spaces",
+      "rejected": true
+    },
+    {
+      "case": "underscores",
+      "rejected": true
+    },
+    {
+      "case": "missing_final_newline",
+      "rejected": true
+    }
+  ],
+  "full_HCANA_replay_performed": false,
+  "nps_replay_commit": "82f6fa3bc8aae79298b649a8e83523c6ee39797a",
+  "format_only_changes": [
+    {
+      "file": "weighted/matrices/nps_shms_newfit_25523_legacy.dat",
+      "before_sha256": "f1d300368d877e62bf014093ff518ca802d5db282c66b4889ec64cbdc8de208b",
+      "after_sha256": "1268fdd0cf70039895ebef76ccef14ead8fc2f21f6cb1193f850f089799b4f13",
+      "coefficient_rows": 132,
+      "coefficient_rows_byte_identical": true,
+      "change": "insert one opening separator line; no coefficient or exponent changes"
+    },
+    {
+      "file": "unweighted/matrices/nps_shms_newfit_25523_unweighted.dat",
+      "before_sha256": "266a98c97e47ceff052f7410efe9d02666c88f99ebee38ff96ac0e11a6e3197e",
+      "after_sha256": "23fdb3e4c7e1156e113392120f849128018a0cf4b1754c3227168ae1c4e4c52e",
+      "coefficient_rows": 132,
+      "coefficient_rows_byte_identical": true,
+      "change": "insert one opening separator line; no coefficient or exponent changes"
+    }
+  ]
+}

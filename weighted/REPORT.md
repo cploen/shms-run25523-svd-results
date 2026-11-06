@@ -51,3 +51,7 @@ Fourteen further PDFs in plots/old and plots/new come from the repository's unmo
 ## Source and provenance
 
 These retained weighted outputs came from the adapted ROOT X^T W X run described above, not from the unmodified fitter at the repository root. Earlier executable adapters and the supplied Python fitting implementation are omitted from the current repository. The prior repository commit preserves their provenance. The current top-level fitter is reserved for the separate unweighted result.
+
+## Replay file-format repair
+
+The matrix text now has its required opening dashed separator. This was a formatting-only repair after fitting: every coefficient row remains byte-identical, so fit results and plots remain valid. The coefficient writer was repaired for subsequent outputs. See ../REPLAY_FORMAT.md for the actual-reader checks and their limits. The external-offset instructions in this report are unchanged.

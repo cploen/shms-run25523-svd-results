@@ -35,9 +35,13 @@ Unweighted legacy fit:
 
 ![Unweighted legacy fit: new matrix residuals](unweighted/plots/new_matrix_preview.png)
 
+## Replay matrix format
+
+Both output matrices now include the opening ` ---` separator required by HCANA. All 132 coefficient rows in each output are byte-for-byte unchanged; neither fit nor any plot was regenerated. The writer is fixed for future outputs too. [Format repair and validation](REPLAY_FORMAT.md) documents comparison with working nps_replay matrices and successful checks using the actual HCANA reader block. No full replay was performed. The different external-offset instructions above still apply.
+
 ## Original fitter and compatibility
 
-**[fit_opt_matrix_gmm.C](fit_opt_matrix_gmm.C)** is the original SHMS fitter from commit **3b93f6e**, with only two foil-total limits changed to the supplied input-row count. This avoids capping a single-foil dataset at 15000 events. The numerical XᵀX solve, ROOT truncation, original 1000-event delta-by-sieve-column cap, basis and fixed terms remain unchanged. The exact historical reference and two-line limit diff are included. This is the only executable fitting implementation in the current repository; supplied Python fitters and earlier adapted implementations are omitted. Prior Git history is preserved.
+**[fit_opt_matrix_gmm.C](fit_opt_matrix_gmm.C)** is the original SHMS fitter from commit **3b93f6e**, with two foil-total limits changed to the supplied input-row count and the required opening output separator restored. This avoids capping a single-foil dataset at 15000 events. The numerical XᵀX solve, ROOT truncation, original 1000-event delta-by-sieve-column cap, basis and fixed terms remain unchanged. The exact historical reference and two-line limit diff are included. This is the only executable fitting implementation in the current repository; supplied Python fitters and earlier adapted implementations are omitted. Prior Git history is preserved.
 
 - [Exact source provenance](ORIGINAL_SOURCE.md)
 - [Input compatibility changes](COMPATIBILITY_SUMMARY.md)

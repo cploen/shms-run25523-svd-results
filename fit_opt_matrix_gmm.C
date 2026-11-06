@@ -662,7 +662,7 @@ void fit_opt_matrix_gmm(
   Double_t tt;
   cout << "writing new coeffs file" << endl;
   //newcoeffsfile << "! new fit to "<<endl;//+fname << endl;
-  //newcoeffsfile << " ---------------------------------------------" << endl;
+  newcoeffsfile << " ---------------------------------------------" << endl;
   for( int icoeff_fit=0; icoeff_fit<num_recon_terms_fit; icoeff_fit++ ){
     newcoeffsfile << " ";
     //      tt=xptarcoeffs_fit[icoeff_fit];
