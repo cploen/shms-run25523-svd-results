@@ -27,3 +27,5 @@ python run25521/reproduce/foil_slice_diagnostics.py "$work_dir"
 python run25521/reproduce/validate_foil_slices.py
 python run25521/reproduce/index_foil_slices.py
 python run25521/reproduce/run_nps_legacy.py "$work_dir"
+
+python run25521/reproduce/plot_delta_vs_ytar.py "$work_dir"

@@ -1,0 +1,52 @@
+{
+  "horizontal_axis": "new-matrix reconstructed ytar (cm)",
+  "vertical_axis": "experimental reconstructed delta (percent), unchanged by angular fit",
+  "event_count_histograms": true,
+  "logarithmic_color": true,
+  "selection": "same 73188 fitted events, 24396 per foil",
+  "new_full_replay": false,
+  "cases": {
+    "unweighted": {
+      "entries": [
+        73188,
+        24396,
+        24396,
+        24396
+      ],
+      "plotted_ranges": {
+        "ytar_cm": [
+          -5,
+          5
+        ],
+        "delta_percent": [
+          -15,
+          22
+        ]
+      },
+      "all_events_within_display": true,
+      "common_color_maximum": 48.0,
+      "weighting": "event counts, no histogram weight"
+    },
+    "weighted": {
+      "entries": [
+        73188,
+        24396,
+        24396,
+        24396
+      ],
+      "plotted_ranges": {
+        "ytar_cm": [
+          -5,
+          5
+        ],
+        "delta_percent": [
+          -15,
+          22
+        ]
+      },
+      "all_events_within_display": true,
+      "common_color_maximum": 48.0,
+      "weighting": "event counts, no histogram weight"
+    }
+  }
+}

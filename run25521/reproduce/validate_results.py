@@ -33,6 +33,7 @@ for case,label in [('unweighted','Unweighted legacy fit'),('weighted','Supplied 
    with uproot.open(p) as f: count=sum(float(f[key].member('fEntries')) for key in f.keys(cycle=False) if re.fullmatch(pattern,key))
    assert count==n,(case,side,axis,count); info['diagnostic_entries'][f'{side}_{axis}']=int(count)
  for p in sorted((out/case/'plots').rglob('*.pdf')):
+  if p.name=='25521_new_delta_vs_ytar.pdf': continue # Validated by its plotting script.
   if any(part.startswith('foil_') or part=='nps_legacy' for part in p.parts): continue # Added suites have separate validation.
   with fitz.open(p) as doc:
    assert len(doc)>0

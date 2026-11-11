@@ -7,6 +7,13 @@ weight definition and conventions, with the three foil positions from this ZIP.
 
 **[Requested NPS_HMS_OPTICS legacy macros: per-foil old/new reports](NPS_LEGACY_DIAGNOSTICS.md).**
 
+New-fit **delta versus ytar**, with all-foil and separate-foil panels:
+[Unweighted PDF](unweighted/plots/new/25521_new_delta_vs_ytar.pdf) ·
+[Supplied weights PDF](weighted/plots/new/25521_new_delta_vs_ytar.pdf).
+Horizontal axis: fitted ytar (cm); vertical axis: delta (%). Colors are event counts
+on a shared logarithmic scale. All 73,188 selected events are shown without clipping.
+
+
 **[Supplemental distributions for each foil and delta slice](DIAGNOSTICS.md).**
 Each foil has separate old/new reports, with direct links to all six delta slices,
 residual distributions by sieve column, and sieve/delta views. These expanded
