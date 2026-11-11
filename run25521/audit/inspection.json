@@ -1,0 +1,392 @@
+{
+  "fit_started": false,
+  "source_sha256": {
+    "data_1.root": "951cada63c88c60656823837292f6ef1588e25765c82e3f08e2e6d692ae2f168",
+    "data_1.npz": "b7ffa993c3dc7ac5ea617d8fdd0da45c1df320600ca5af46cd673bd24cd49b37"
+  },
+  "root_objects": {
+    "train;1": "TTree"
+  },
+  "root_entries": 106058,
+  "root_typenames": {
+    "run": "int32_t",
+    "source_full_entry": "int64_t",
+    "source_row": "int64_t",
+    "split": "int8_t",
+    "delta_percent": "double",
+    "z_reco_cm": "double",
+    "beam_x_cm": "double",
+    "beam_y_cm": "double",
+    "fp_x_cm": "double",
+    "fp_y_cm": "double",
+    "fp_xp_rad": "double",
+    "fp_yp_rad": "double",
+    "raster_x_adc": "double",
+    "raster_y_adc": "double",
+    "reco_xtar_cm": "double",
+    "reco_ytar_cm": "double",
+    "reco_xptar_rad": "double",
+    "reco_yptar_rad": "double",
+    "cluster_id": "int32_t",
+    "parent_cluster_id": "int32_t",
+    "is_child_cluster": "bool",
+    "joint_class_id": "int16_t",
+    "foil_id": "int16_t",
+    "hole_col": "int16_t",
+    "hole_row": "int16_t",
+    "index_window_low_percent": "double",
+    "index_window_high_percent": "double",
+    "direct_window_mask": "bool",
+    "identity_transferred": "bool",
+    "identity_competition": "bool",
+    "index_window_events": "int32_t",
+    "sparse_window_diagnostic": "bool",
+    "candidate_score": "double",
+    "review_required": "bool",
+    "physical_accuracy_verified": "bool",
+    "original_raw_cluster": "int32_t",
+    "original_joint_class_id": "int16_t",
+    "previous_w010_joint": "int16_t",
+    "previous_m15_joint": "int16_t",
+    "split_unassigned": "bool"
+  },
+  "same_fields": true,
+  "root_npz_equal": {
+    "run": true,
+    "source_full_entry": true,
+    "source_row": true,
+    "split": true,
+    "delta_percent": true,
+    "z_reco_cm": true,
+    "beam_x_cm": true,
+    "beam_y_cm": true,
+    "fp_x_cm": true,
+    "fp_y_cm": true,
+    "fp_xp_rad": true,
+    "fp_yp_rad": true,
+    "raster_x_adc": true,
+    "raster_y_adc": true,
+    "reco_xtar_cm": true,
+    "reco_ytar_cm": true,
+    "reco_xptar_rad": true,
+    "reco_yptar_rad": true,
+    "cluster_id": true,
+    "parent_cluster_id": true,
+    "is_child_cluster": true,
+    "joint_class_id": true,
+    "foil_id": true,
+    "hole_col": true,
+    "hole_row": true,
+    "index_window_low_percent": true,
+    "index_window_high_percent": true,
+    "direct_window_mask": true,
+    "identity_transferred": true,
+    "identity_competition": true,
+    "index_window_events": true,
+    "sparse_window_diagnostic": true,
+    "candidate_score": true,
+    "review_required": true,
+    "physical_accuracy_verified": true,
+    "original_raw_cluster": true,
+    "original_joint_class_id": true,
+    "previous_w010_joint": true,
+    "previous_m15_joint": true,
+    "split_unassigned": true
+  },
+  "fields": {
+    "run": {
+      "dtype": "int32",
+      "finite": 106058,
+      "min": 25521,
+      "max": 25521
+    },
+    "source_full_entry": {
+      "dtype": "int64",
+      "finite": 106058,
+      "min": 1,
+      "max": 521281
+    },
+    "source_row": {
+      "dtype": "int64",
+      "finite": 106058,
+      "min": -1,
+      "max": 155056
+    },
+    "split": {
+      "dtype": "int8",
+      "finite": 106058,
+      "min": -1,
+      "max": 3
+    },
+    "delta_percent": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -19.989557809711535,
+      "max": 33.58397642586486
+    },
+    "z_reco_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -32.49309884462294,
+      "max": 17.378252779339647
+    },
+    "beam_x_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -0.12157045810185332,
+      "max": 0.08774223322304733
+    },
+    "beam_y_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -0.09582728781218293,
+      "max": 0.13243786943683622
+    },
+    "fp_x_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -36.83045306187242,
+      "max": 36.81683473835518
+    },
+    "fp_y_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -31.59958877110812,
+      "max": 32.70556556624751
+    },
+    "fp_xp_rad": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -0.09342349221826332,
+      "max": 0.09418433324893928
+    },
+    "fp_yp_rad": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -0.04456254998979173,
+      "max": 0.044525770507815504
+    },
+    "raster_x_adc": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": 41262.0,
+      "max": 67455.0
+    },
+    "raster_y_adc": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": 41248.0,
+      "max": 68435.0
+    },
+    "reco_xtar_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -1.0128243414311373,
+      "max": 1.038754517080816
+    },
+    "reco_ytar_cm": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -4.2743603353167705,
+      "max": 6.988830331512464
+    },
+    "reco_xptar_rad": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -0.06184381690070252,
+      "max": 0.05415651957257026
+    },
+    "reco_yptar_rad": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -0.04225449855686364,
+      "max": 0.03234180987121639
+    },
+    "cluster_id": {
+      "dtype": "int32",
+      "finite": 106058,
+      "min": 0,
+      "max": 21400
+    },
+    "parent_cluster_id": {
+      "dtype": "int32",
+      "finite": 106058,
+      "min": 0,
+      "max": 214
+    },
+    "is_child_cluster": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": true
+    },
+    "joint_class_id": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": 3,
+      "max": 352
+    },
+    "foil_id": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": 0,
+      "max": 2
+    },
+    "hole_col": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": -5,
+      "max": 5
+    },
+    "hole_row": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": -4,
+      "max": 4
+    },
+    "index_window_low_percent": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": -10.0,
+      "max": 0.0
+    },
+    "index_window_high_percent": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": 0.0,
+      "max": 10.0
+    },
+    "direct_window_mask": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": true
+    },
+    "identity_transferred": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": true
+    },
+    "identity_competition": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": true
+    },
+    "index_window_events": {
+      "dtype": "int32",
+      "finite": 106058,
+      "min": 1,
+      "max": 351
+    },
+    "sparse_window_diagnostic": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": true
+    },
+    "candidate_score": {
+      "dtype": "float64",
+      "finite": 106058,
+      "min": 0.006738376285103,
+      "max": 0.900841374485017
+    },
+    "review_required": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": true,
+      "max": true
+    },
+    "physical_accuracy_verified": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": false
+    },
+    "original_raw_cluster": {
+      "dtype": "int32",
+      "finite": 106058,
+      "min": -1,
+      "max": 231
+    },
+    "original_joint_class_id": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": -1,
+      "max": 352
+    },
+    "previous_w010_joint": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": -1,
+      "max": 343
+    },
+    "previous_m15_joint": {
+      "dtype": "int16",
+      "finite": 106058,
+      "min": -1,
+      "max": 352
+    },
+    "split_unassigned": {
+      "dtype": "bool",
+      "finite": 106058,
+      "min": false,
+      "max": true
+    }
+  },
+  "foil_populations": {
+    "0": 34429,
+    "1": 33216,
+    "2": 38413
+  },
+  "split_populations_ignored": {
+    "-1": 482,
+    "0": 63414,
+    "1": 10530,
+    "2": 10524,
+    "3": 21108
+  },
+  "clusters": 219,
+  "candidate_joint_identities": 209,
+  "duplicate_source_keys": 0,
+  "flags": {
+    "is_child_cluster": 1753,
+    "direct_window_mask": 25383,
+    "identity_transferred": 80675,
+    "identity_competition": 9394,
+    "sparse_window_diagnostic": 3849,
+    "review_required": 106058,
+    "physical_accuracy_verified": 0,
+    "split_unassigned": 482
+  },
+  "native_delta_gate_only_by_foil": {
+    "0": 31401,
+    "1": 31835,
+    "2": 37250
+  },
+  "eligible_counts_determined": false,
+  "fitted_counts_by_foil": {
+    "0": 0,
+    "1": 0,
+    "2": 0
+  },
+  "missing_legacy_branches": [
+    "ys",
+    "ysT",
+    "xtar",
+    "xtarT",
+    "xptar",
+    "yptar",
+    "ytar",
+    "xptarT",
+    "yptarT",
+    "ytarT",
+    "ztarT",
+    "delta",
+    "xpfp",
+    "ypfp",
+    "xfp",
+    "yfp"
+  ]
+}
