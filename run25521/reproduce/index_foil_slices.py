@@ -4,7 +4,7 @@ from pathlib import Path
 out=Path(__file__).resolve().parents[1]; records=json.loads((out/'foil_slice_validation.json').read_text())['case_side_foil_slices']
 zs=[10,0,-10]; folders=['foil_0_z_plus10','foil_1_z_0','foil_2_z_minus10']
 lines=['# Run 25521 diagnostics: choose a foil, then a delta slice','',
-'The original summary PDFs combine foils. **Use the links below for the actual foil-by-foil inspection.** Each foil report contains six delta slices, in increasing delta order; its PDF bookmarks select a slice. Each slice has five pages, described below.','',
+'For the exact requested historical views, start with [NPS_HMS_OPTICS legacy macro reports](NPS_LEGACY_DIAGNOSTICS.md). These expanded distributions are supplemental. The original summary PDFs combine foils. **Use the links below for the actual foil-by-foil inspection.** Each foil report contains six delta slices, in increasing delta order; its PDF bookmarks select a slice. Each slice has five pages, described below.','',
 'All views use the identical 73,188 fitted events (24,396 per foil), with matching old/new matrix inputs. There has been no refit or change to any matrix.','',
 '## One report per foil','',
 '| Method | Foil label / z | Old matrix (30 pages) | New matrix (30 pages) |','|---|---|---|---|']

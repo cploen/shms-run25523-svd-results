@@ -5,7 +5,9 @@ with no inherited split selection or held-out sample. Run 25523 results are unch
 User clarification authorizes the previous run's geometry, starting matrix,
 weight definition and conventions, with the three foil positions from this ZIP.
 
-**[Start here: explicit diagnostics for each foil and delta slice](DIAGNOSTICS.md).**
+**[Requested NPS_HMS_OPTICS legacy macros: per-foil old/new reports](NPS_LEGACY_DIAGNOSTICS.md).**
+
+**[Supplemental distributions for each foil and delta slice](DIAGNOSTICS.md).**
 Each foil has separate old/new reports, with direct links to all six delta slices,
 residual distributions by sieve column, and sieve/delta views. These expanded
 displays supplement the original legacy PDFs linked below.

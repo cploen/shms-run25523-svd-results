@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/cploen/NPS_HMS_OPTICS",
+  "commit": "d4dc427f8c260b868a7d4844e2707236a421601b",
+  "files": {
+    "plot_xptar_diff.C": {
+      "original_sha256": "12a9b245d6bc670a8499cabdf92aee474b2e87cb5cbc5b201171de3a04266d08",
+      "adapted_sha256": "5417314b37c6c82a06ed4dee60407c9e784cea8ee9c65af9a9b32323db21e78b"
+    },
+    "plot_yptar_diff.C": {
+      "original_sha256": "0f2b36e2ceb13f90b1d201d38ac82c28cebcb1c8be6b9a286c5bd9716f75f57e",
+      "adapted_sha256": "99d1328324ecb7d4c2b71109d9243cd5f44f27ed8527e667b17fa4863734c0d4"
+    },
+    "plot_ytar_diff.C": {
+      "original_sha256": "06bb60047acc9a46fdbdbaba4e34da2c92febc652f085f5a88e4c8f4f58fd8ca",
+      "adapted_sha256": "5892dbe830f1a805c53d486d1ca422c60954fa0d23ddaa4708c8f2bbbcc4ae7f"
+    }
+  }
+}

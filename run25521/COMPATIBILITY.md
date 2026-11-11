@@ -128,3 +128,17 @@ reconstructed-minus-target residuals without the old ±0.035 cm display shifts;
 that distinction is explicit in the index. They show all sieve-column
 distributions and reconstructed sieve patterns on fixed geometric xtar inputs.
 They are displays of the existing fit, not a new fitting or replay method.
+
+## Requested NPS_HMS_OPTICS source comparison
+
+The user subsequently identified cploen/NPS_HMS_OPTICS as the diagnostic source.
+The three plot_*tar_diff.C files were copied byte-for-byte from commit
+`d4dc427f8c260b868a7d4844e2707236a421601b`, adapted only for the authorized SHMS
+plotting grid, checked metadata/file interface and arm captions, and executed.
+Originals, adaptations and exact diffs are retained under reproduce/nps_legacy/.
+Every histogram bin (including overflow) matches the existing legacy diagnostic
+outputs. This establishes the source relationship directly rather than relying
+on the earlier macro names. The [source-specific index](NPS_LEGACY_DIAGNOSTICS.md)
+provides per-foil 11-page old/new reports, original complete outputs, page order,
+RMS interpretation, display-shift caveats, and the missing replay-branch limits
+for the separate SCRIPTS/plotOptics* analyses.

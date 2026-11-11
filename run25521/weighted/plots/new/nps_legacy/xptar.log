@@ -1,0 +1,92 @@
+/workspace/work/optics-venv/lib/python3.12/site-packages/ROOT/__init__.py:222: UserWarning: 
+This distribution of ROOT is in alpha stage. Feedback is welcome and appreciated. Feel free to reach out to the user forum for questions and general feedback at https://root-forum.cern.ch or to submit an issue at https://github.com/root-project/root/issues. Do not rely on this distribution for production purposes.
+
+  warnings.warn(
+Processing /workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C(25521,"/workspace/work/run25521-fit/SHMS_run25521/weighted_new.root","/workspace/work/shms-results/run25521/config/SHMS_run25521/optics_metadata.dat","/workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy","25521_new")...
+In file included from input_line_8:1:
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:280:31: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* canFoilDel[NumFoil][ndelcut];
+                                     ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:280:31: note: initializer of 'ndelcut' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:45: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+                                            ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:280:22: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* canFoilDel[NumFoil][ndelcut];
+                            ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:280:22: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:14: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+             ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:281:42: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgrFoilDel[NumFoil][ndelcut];
+                                         ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:281:42: note: initializer of 'ndelcut' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:45: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+                                            ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:281:33: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgrFoilDel[NumFoil][ndelcut];
+                                ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:281:33: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:14: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+             ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:282:38: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *legFoilDel[NumFoil][ndelcut];
+                                     ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:282:38: note: initializer of 'ndelcut' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:45: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+                                            ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:282:29: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *legFoilDel[NumFoil][ndelcut];
+                            ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:282:29: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:14: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+             ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:306:18: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* candel[NumFoil];
+                        ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:306:18: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:14: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+             ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:307:26: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgr[NumFoil];
+                         ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:307:26: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:14: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+             ^
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:308:22: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *leg[NumFoil];
+                     ^~~~~~~
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:308:22: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/run25521/reproduce/nps_legacy/plot_xptar_diff.C:59:14: note: declared here
+ const Int_t NumFoil=metadata.foils.size(), ndelcut=metadata.edges.size()-1;
+             ^
+Metadata: 3 foils, 6 delta intervals
+ start loop 73188
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf has been created using the current canvas
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff.pdf and file closed
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff_xs.pdf has been created using the current canvas
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff_xs.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/weighted/plots/new/nps_legacy/25521_new_xpdiff_xs.pdf and file closed
