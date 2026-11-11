@@ -29,3 +29,4 @@ python run25521/reproduce/index_foil_slices.py
 python run25521/reproduce/run_nps_legacy.py "$work_dir"
 
 python run25521/reproduce/plot_delta_vs_ytar.py "$work_dir"
+python run25521/reproduce/plot_delta_vs_ytar_comparison.py "$work_dir"

@@ -7,6 +7,15 @@ weight definition and conventions, with the three foil positions from this ZIP.
 
 **[Requested NPS_HMS_OPTICS legacy macros: per-foil old/new reports](NPS_LEGACY_DIAGNOSTICS.md).**
 
+**Before/after delta versus ytar:**
+[Unweighted PDF](unweighted/plots/comparison/25521_delta_vs_ytar_before_after.pdf) ·
+[Supplied weights PDF](weighted/plots/comparison/25521_delta_vs_ytar_before_after.pdf).
+Left = starting matrix; right = new fit. Page 1 combines foils; pages 2–4 show
++10, 0, and −10 cm foils separately. Both use identical events, bins, axes and
+a single shared logarithmic event-count color scale. Ytar is evaluated at the
+same geometric xtar before and after; this is a matrix comparison, not a full replay.
+All events are inside the plotted ranges.
+
 New-fit **delta versus ytar**, with all-foil and separate-foil panels:
 [Unweighted PDF](unweighted/plots/new/25521_new_delta_vs_ytar.pdf) ·
 [Supplied weights PDF](weighted/plots/new/25521_new_delta_vs_ytar.pdf).

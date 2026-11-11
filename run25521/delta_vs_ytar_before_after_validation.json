@@ -1,0 +1,71 @@
+{
+  "selection": "identical 73188 fitted events (24396 per foil), both methods, before and after",
+  "same_input_arrays_and_order_checked": true,
+  "before": "starting matrix evaluated at geometric xtar",
+  "after": "emitted new fit matrix evaluated at the same geometric xtar",
+  "horizontal_axis": "reconstructed ytar (cm)",
+  "vertical_axis": "experimental reconstructed delta (%)",
+  "histogram_weighting": "event counts for both fits",
+  "color_scale": "common logarithmic scale across every panel and both cases",
+  "color_min": 1,
+  "color_max": 54.0,
+  "binning": [
+    216,
+    148
+  ],
+  "ranges": {
+    "ytar_cm": [
+      -6.0,
+      6.0
+    ],
+    "delta_percent": [
+      -15.0,
+      22.0
+    ]
+  },
+  "all_events_within_display": true,
+  "full_HCANA_replay": false,
+  "cases": {
+    "unweighted": {
+      "before_entries": [
+        73188,
+        24396,
+        24396,
+        24396
+      ],
+      "after_entries": [
+        73188,
+        24396,
+        24396,
+        24396
+      ],
+      "pdf_pages": [
+        "all foils",
+        "foil 0: +10 cm",
+        "foil 1: 0 cm",
+        "foil 2: -10 cm"
+      ]
+    },
+    "weighted": {
+      "before_entries": [
+        73188,
+        24396,
+        24396,
+        24396
+      ],
+      "after_entries": [
+        73188,
+        24396,
+        24396,
+        24396
+      ],
+      "pdf_pages": [
+        "all foils",
+        "foil 0: +10 cm",
+        "foil 1: 0 cm",
+        "foil 2: -10 cm"
+      ]
+    }
+  },
+  "four_pdf_pages_and_before_after_headers_verified_each_case": true
+}
