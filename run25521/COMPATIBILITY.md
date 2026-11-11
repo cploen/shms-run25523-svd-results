@@ -117,3 +117,14 @@ extended-target reconstruction, momentum fit or cross-run validation is claimed.
 Old automatic summary and full old diagnostics differ in xtar convention as
 explained in README; all are based on matching selected events. Empty or sparse
 legacy bins remain visible rather than prompting label changes.
+
+## Expanded foil/delta inspection displays
+
+The follow-up [diagnostic index](DIAGNOSTICS.md) supplies additional ROOT displays
+for all three foils and all six native delta slices, including the distribution
+canvases absent from the original PDFs. Existing matrices, fitted populations,
+legacy PDFs and ROOT histograms remain unchanged. Expanded views use raw
+reconstructed-minus-target residuals without the old ±0.035 cm display shifts;
+that distinction is explicit in the index. They show all sieve-column
+distributions and reconstructed sieve patterns on fixed geometric xtar inputs.
+They are displays of the existing fit, not a new fitting or replay method.

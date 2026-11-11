@@ -33,6 +33,7 @@ for case,label in [('unweighted','Unweighted legacy fit'),('weighted','Supplied 
    with uproot.open(p) as f: count=sum(float(f[key].member('fEntries')) for key in f.keys(cycle=False) if re.fullmatch(pattern,key))
    assert count==n,(case,side,axis,count); info['diagnostic_entries'][f'{side}_{axis}']=int(count)
  for p in sorted((out/case/'plots').rglob('*.pdf')):
+  if any(part.startswith('foil_') for part in p.parts): continue # Expanded suite has separate validation.
   with fitz.open(p) as doc:
    assert len(doc)>0
    for page in doc: assert label in page.get_text(),str(p)

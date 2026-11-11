@@ -5,6 +5,11 @@ with no inherited split selection or held-out sample. Run 25523 results are unch
 User clarification authorizes the previous run's geometry, starting matrix,
 weight definition and conventions, with the three foil positions from this ZIP.
 
+**[Start here: explicit diagnostics for each foil and delta slice](DIAGNOSTICS.md).**
+Each foil has separate old/new reports, with direct links to all six delta slices,
+residual distributions by sieve column, and sieve/delta views. These expanded
+displays supplement the original legacy PDFs linked below.
+
 | Deliverable | Supplied weights | Unweighted legacy fit |
 |---|---|---|
 | Replay matrix | [Matrix](weighted/matrices/nps_shms_newfit_25521_weighted.dat) | [Matrix](unweighted/matrices/nps_shms_newfit_25521_unweighted.dat) |
@@ -15,10 +20,10 @@ weight definition and conventions, with the three foil positions from this ZIP.
 | Numerical report | [JSON](weighted/fit_report.json) | [JSON](unweighted/fit_report.json) |
 | Solver outcome | [JSON](weighted/solver.json) | [JSON](unweighted/solver.json) |
 
-Each case has two automatic summary PDFs plus seven legacy PDFs under each of
+The original suite in each case has two automatic summary PDFs plus seven legacy PDFs under each of
 plots/old and plots/new: xptar, yptar and ytar residuals; each axis by sieve; and
 ytar versus delta. Xptar residual pages cover all 3 foils × 6 delta slices.
-There are 16 PDFs / 70 pages per case. Every page carries its neutral method label.
+That original suite has 16 PDFs / 70 pages per case. Every page carries its neutral method label.
 The legacy plot histograms are event-count diagnostics, without fit weights;
 weighted RMSE is separately reported in the JSON.
 

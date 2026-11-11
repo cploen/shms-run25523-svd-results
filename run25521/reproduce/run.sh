@@ -23,3 +23,6 @@ python diagnostics/label_plot_pdfs.py run25521/unweighted/plots run25521/unweigh
 python diagnostics/label_plot_pdfs.py run25521/weighted/plots run25521/weighted/plots/old run25521/weighted/plots/new --label 'Supplied weights'
 python tests/check_replay_matrix_format.py --hcana "$hcana_dir" --matrix "$repo_dir/run25521/unweighted/matrices/nps_shms_newfit_25521_unweighted.dat" --matrix "$repo_dir/run25521/weighted/matrices/nps_shms_newfit_25521_weighted.dat" --report run25521/replay_format_validation.json
 python run25521/reproduce/validate_results.py "$work_dir"
+python run25521/reproduce/foil_slice_diagnostics.py "$work_dir"
+python run25521/reproduce/validate_foil_slices.py
+python run25521/reproduce/index_foil_slices.py
