@@ -1,0 +1,150 @@
+/workspace/work/optics-venv/lib/python3.12/site-packages/ROOT/__init__.py:222: UserWarning: 
+This distribution of ROOT is in alpha stage. Feedback is welcome and appreciated. Feel free to reach out to the user forum for questions and general feedback at https://root-forum.cern.ch or to submit an issue at https://github.com/root-project/root/issues. Do not rely on this distribution for production purposes.
+
+  warnings.warn(
+Processing run25521/reproduce/fit_run25521.C+("25521_weighted",-1,73188,-1,"/workspace/work/run25521-fit/SHMS_run25521/balanced","/workspace/work/shms-results/run25521/weighted","/workspace/work/shms-results/config/base_matrix.dat","/workspace/work/shms-results/run25521/config/SHMS_run25521/rungroups_inputs.tsv","/workspace/work/shms-results/run25521/config/SHMS_run25521/optics_metadata.dat",true)...
+Spectrometer: SHMS; centered sieve; delta=(-10,22) percent
+Campaign settings read from: /workspace/work/shms-results/run25521/config/SHMS_run25521/rungroups_inputs.tsv
+Number of settings: 1
+Open  Old coeff file = /workspace/work/shms-results/config/base_matrix.dat
+ skipped 6 comments lines in file : /workspace/work/shms-results/config/base_matrix.dat
+ at line =  ---------------------------------------------------------------------
+ skipped 1 separation lines in file : /workspace/work/shms-results/config/base_matrix.dat
+      0.277714223    -0.046726452    0.0303003269     0.667153399 10000
+num recon terms in OLD matrix = 131
+num recon terms in fit matrix = 126
+num recon terms in xtar matrix = 6
+ Open file = /workspace/work/shms-results/run25521/config/SHMS_run25521/optics_metadata.dat
+ztar foil 10
+ztar foil 0
+ nd = 0 -25
+ nd = 1 -6
+ nd = 2 -2
+ nd = 3 2
+ nd = 4 6
+ nd = 5 10
+25521 run25521 13.505 3 1
+ INfile = /workspace/work/run25521-fit/SHMS_run25521/balanced/Optics_25521_-1_fit_tree_gmm.root
+ counts foil 0 : 24396
+ counts foil 1 : 24396
+ counts foil 2 : 24396
+ ztar = 10
+ Ndelta = -15.5
+0 1000 1000 1000 1000 1000 1000 640 44 0 0 
+ Ndelta = -4
+0 1000 1000 1000 747 563 471 346 84 0 0 
+ Ndelta = 0
+0 1000 895 914 589 468 372 258 68 0 0 
+ Ndelta = 4
+0 802 678 645 419 312 267 196 81 0 0 
+ Ndelta = 8
+0 604 396 437 322 230 206 126 69 0 0 
+ Ndelta = 16
+0 505 475 429 286 199 161 72 20 0 0 
+ ztar = 0
+ Ndelta = -15.5
+0 366 1000 1000 1000 1000 1000 1000 533 0 0 
+ Ndelta = -4
+0 327 1000 1000 969 819 688 431 272 7 0 
+ Ndelta = 0
+0 188 1000 941 654 519 438 259 180 20 0 
+ Ndelta = 4
+0 72 753 680 444 371 340 265 191 33 0 
+ Ndelta = 8
+0 9 471 430 310 270 258 224 94 29 0 
+ Ndelta = 16
+0 0 697 600 320 333 291 195 79 26 0 
+ ztar = -10
+ Ndelta = -15.5
+0 0 1000 1000 1000 1000 1000 1000 673 275 0 
+ Ndelta = -4
+0 0 1000 1000 843 746 706 489 315 195 0 
+ Ndelta = 0
+0 0 1000 657 525 406 364 292 158 149 0 
+ Ndelta = 4
+0 0 897 676 422 362 328 245 144 133 0 
+ Ndelta = 8
+0 0 598 491 351 310 222 191 128 123 0 
+ Ndelta = 16
+0 0 787 662 473 352 294 228 109 77 0 
+ number to fit = 73188 max = 73188
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+40000
+45000
+50000
+55000
+60000
+65000
+70000
+ytar solution ok = 1
+yptar solution ok = 1
+xptar solution ok = 1
+writing new coeffs file
+wrote new coeffs file
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =      9446.74
+NDf                       =           55
+Edm                       =  1.89034e-06
+NCalls                    =          109
+Constant                  =      11325.6   +/-   66.5792     
+Mean                      =    0.0595822   +/-   0.00137107  
+Sigma                     =     0.320647   +/-   0.00139193   	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =         3506
+NDf                       =           80
+Edm                       =  2.29639e-06
+NCalls                    =           77
+Constant                  =      3411.99   +/-   17.9804     
+Mean                      =    -0.680938   +/-   0.0064885   
+Sigma                     =       1.6221   +/-   0.00592812   	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =      5754.27
+NDf                       =           87
+Edm                       =  2.08693e-09
+NCalls                    =          121
+Constant                  =      7125.56   +/-   37.1373     
+Mean                      =    -0.168822   +/-   0.00437482  
+Sigma                     =      1.13262   +/-   0.00397614   	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =      4603.58
+NDf                       =           39
+Edm                       =  6.81786e-09
+NCalls                    =           82
+Constant                  =      12547.7   +/-   67.5207     
+Mean                      =    0.0312366   +/-   0.0011918   
+Sigma                     =      0.31151   +/-   0.0011807    	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =      982.584
+NDf                       =           87
+Edm                       =  8.11591e-06
+NCalls                    =           61
+Constant                  =      4049.51   +/-   19.8438     
+Mean                      =    0.0190116   +/-   0.00529485  
+Sigma                     =      1.42266   +/-   0.00453485   	 (limited)
+****************************************
+Minimizer is Minuit2 / Migrad
+Chi2                      =       4952.3
+NDf                       =           88
+Edm                       =  9.55136e-10
+NCalls                    =           75
+Constant                  =      6141.74   +/-   32.4196     
+Mean                      =  0.000541563   +/-   0.00509489  
+Sigma                     =      1.32967   +/-   0.00482459   	 (limited)
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/weighted/plots/fit_opt_matrix_25521_weighted_old_matrix_diff.pdf has been created
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/weighted/plots/fit_opt_matrix_25521_weighted_new_matrix_diff.pdf has been created
+Saved matrix QA PDFs:
+  /workspace/work/shms-results/run25521/weighted/plots/fit_opt_matrix_25521_weighted_old_matrix_diff.pdf
+  /workspace/work/shms-results/run25521/weighted/plots/fit_opt_matrix_25521_weighted_new_matrix_diff.pdf
+Saved matrix QA ROOT: /workspace/work/shms-results/run25521/weighted/root/fit_opt_matrix_25521_weighted_qa.root

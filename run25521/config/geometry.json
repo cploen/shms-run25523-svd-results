@@ -1,0 +1,70 @@
+{
+  "run": 25521,
+  "foil_z_cm_by_rank": {
+    "0": 10,
+    "1": 0,
+    "2": -10
+  },
+  "foil_evidence": "User confirms previous-run geometry with additional foils; foil order from this handoff README.",
+  "sieve_type": "centered",
+  "hole_col_to_xs_num": 1,
+  "hole_row_to_ys_num": 1,
+  "hole_pitch_cm": [
+    2.5,
+    1.64
+  ],
+  "hole_index_bounds": [
+    -5,
+    5
+  ],
+  "blocked_holes": [
+    [
+      1,
+      3
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "sieve_center_offset_cm": [
+    0,
+    0
+  ],
+  "sieve_z_cm": 253,
+  "theta_deg": 13.505,
+  "mispoint_x_cm": -0.126,
+  "mispoint_y_cm": -0.06,
+  "beam_source": [
+    "P.rb.x",
+    "P.rb.y"
+  ],
+  "beam_units": "cm",
+  "beam_calibration_status": "Inherited full replay beam coordinates; no independent beam calibration performed here.",
+  "hb_delta_polynomial_cm": [
+    -0.0398,
+    0.000398
+  ],
+  "xptar_external_offset_rad": -0.0008681269905,
+  "yptar_external_offset_rad": 0,
+  "delta_external_offset_percent": 0,
+  "pcentral_external_offset_percent": -0.4,
+  "nominal_signed_pcentral_GeV": -6.358,
+  "replay_pcentral_magnitude_GeV": 6.332568,
+  "MC_input_theta_deg": 13.495,
+  "angle_convention": "Use the runlist/effective replay angle 13.505 deg for these constraints. The existing MC input uses 13.495 deg; those settings are recorded separately.",
+  "plate_pattern_status": "Grid pitch and blocked-hole pattern confirmed in project geometry on 2026-09-17 and adopted by the Run 25523 MC.",
+  "geometry_status": "User-authorized inheritance of prior nominal geometry with three nominal foils; no new survey or physical validation.",
+  "scope": "Run 25521 angular SVD: fit xptar/ytar/yptar including constant; keep delta and xtar-dependent terms fixed; preserve candidate labels.",
+  "evidence": [
+    "docs/analysis/SHMS_FIRST_BATCH_PUBLIC_METADATA_RESEARCH_2026-09-11.md:32-39",
+    "docs/analysis/source_pack_20260911/geometry_beam/SOURCE_EVIDENCE.md:12-19",
+    "outputs/split_cluster_mc_25523_20261019/mc_work/infiles/rsidis25523_thick.inp:13-23",
+    "outputs/split_cluster_mc_25523_20261019/mc_work/src/shms/mc_shms.f:430-451",
+    "outputs/foil_structure_20260917/confirmed_sieve_geometry.json",
+    "manifest.json:source_alignment_report"
+  ],
+  "physical_accuracy_verified": false,
+  "installed_plate_pose_for_run25521": "Inherited nominal centered geometry, not independently surveyed",
+  "authorization": "User: it is the same as the previous run, just with more foils."
+}

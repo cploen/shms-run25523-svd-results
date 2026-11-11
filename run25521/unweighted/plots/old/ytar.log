@@ -1,0 +1,44 @@
+/workspace/work/optics-venv/lib/python3.12/site-packages/ROOT/__init__.py:222: UserWarning: 
+This distribution of ROOT is in alpha stage. Feedback is welcome and appreciated. Feel free to reach out to the user forum for questions and general feedback at https://root-forum.cern.ch or to submit an issue at https://github.com/root-project/root/issues. Do not rely on this distribution for production purposes.
+
+  warnings.warn(
+Processing /workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C(25521,"/workspace/work/run25521-fit/SHMS_run25521/unweighted_old.root","/workspace/work/shms-results/run25521/config/SHMS_run25521/optics_metadata.dat","/workspace/work/shms-results/run25521/unweighted/plots/old","25521_old")...
+In file included from input_line_8:1:
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:244:17: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* can2d[NumFoil];
+                       ^~~~~~~
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:244:17: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:315:18: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TCanvas* candel[NumFoil];
+                        ^~~~~~~
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:315:18: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:316:26: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TMultiGraph *mgr[NumFoil];
+                         ^~~~~~~
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:316:26: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:317:22: warning: variable length arrays in C++ are a Clang extension [-Wvla-cxx-extension]
+        TLegend *leg[NumFoil];
+                     ^~~~~~~
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:317:22: note: initializer of 'NumFoil' is not a constant expression
+/workspace/work/shms-results/diagnostics/fit/plot_ytar_residuals.C:69:27: note: declared here
+ const Int_t RunNum=nrun, NumFoil=metadata.foils.size();
+                          ^
+Spectrometer: SHMS; centered sieve; delta=(-10,22) percent
+Metadata: 3 foils; 7 delta boundaries; 6 intervals
+ start loop 73188
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals.pdf has been created using the current canvas
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals.pdf and file closed
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals_delta.pdf has been created
+Info in <TCanvas::Print>: pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals_by_sieve.pdf has been created using the current canvas
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals_by_sieve.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /workspace/work/shms-results/run25521/unweighted/plots/old/25521_old_ytar_residuals_by_sieve.pdf and file closed

@@ -1,0 +1,134 @@
+--- fit_opt_matrix_gmm.C
++++ run25521/reproduce/fit_run25521.C
+@@ -1,5 +1,8 @@
+ // HMS/SHMS: campaign-selected branches, centered geometry and acceptance; see docs/HMS_SHMS_REVIEW.md.
+-#include "spectrometer_root.h"
++#include "../../spectrometer_root.h"
++#include <TF1.h>
++#include <cmath>
++using namespace std;
+ #include <iostream>
+ #include <fstream>
+ #include <iomanip>
+@@ -25,7 +28,7 @@
+ 
+ 
+ 
+-void fit_opt_matrix_gmm(
++void fit_run25521(
+   TString tag,
+   Int_t FileID,
+   Int_t nfit_max_arg,
+@@ -34,7 +37,8 @@
+   TString outputDir,
+   TString oldCoeffsFile,
+   TString rungroupsTsv,
+-  TString opticsMetadataFile) {
++  TString opticsMetadataFile,
++  Bool_t suppliedWeights=kFALSE) {
+   hallc::Spectrometer spec;
+   if (!hallc::loadSpectrometer(rungroupsTsv, spec)) return;
+ 
+@@ -206,6 +210,7 @@
+   vector<int> ypfpexpon_xtar;
+   vector<int> xtarexpon_xtar;
+ 
++  vector<double> eventWeights;
+   vector<double> xtartrue,ytartrue,xptartrue,yptartrue,deltatrue,angle,ztartrue;
+   vector<double> xfptrue,yfptrue,xpfptrue,ypfptrue;
+   TString currentline;
+@@ -430,6 +435,8 @@
+       fsimc->Close();
+       continue;
+     }
++    Double_t fitWeight=1.;
++    if (suppliedWeights) FitTree->SetBranchAddress("fit_weight",&fitWeight);
+     //Declaration of leaves types
+     Double_t  ys,xtar,xptar,yptar,ytar,delta,xptarT,yptarT,ytarT,ztarT,xtarT;
+     Double_t xfp,xpfp,yfp,ypfp,ysieveT,ysieve;
+@@ -476,6 +483,7 @@
+   Long64_t nentries = FitTree->GetEntries();
+   for (int i = 0; i < nentries; i++) {
+     FitTree->GetEntry(i);
++    if (!(fitWeight>0.) || !std::isfinite(fitWeight)) { cout << "ERROR invalid weight" << endl; return; }
+     //
+     if (TMath::Abs(delta) < 100. ) {
+       Double_t ytartemp = 0.0,yptartemp=0.0,xptartemp=0.0,deltatemp=0.0;
+@@ -538,9 +546,9 @@
+ 	      pow( xtar/100., xtarexpon_fit[icoeff_fit] );
+ 	    if (nfit < nfit_max ) {
+               lambda[icoeff_fit][nfit] = etemp;
+-	      b_xptar[icoeff_fit] += (xptarT-xptar_xtar) * etemp;
+-	      b_yptar[icoeff_fit] += (yptarT-yptar_xtar) * etemp;
+-	      b_ytar[icoeff_fit] += (ytarT-ytar_xtar*100) /100.0 * etemp;
++	      b_xptar[icoeff_fit] += (xptarT-xptar_xtar) * etemp * fitWeight;
++	      b_yptar[icoeff_fit] += (yptarT-yptar_xtar) * etemp * fitWeight;
++	      b_ytar[icoeff_fit] += (ytarT-ytar_xtar*100) /100.0 * etemp * fitWeight;
+ 	    }
+ 	  } // for icoeff_fit loop
+ 	   
+@@ -554,6 +562,7 @@
+ 	  hxptardiff->Fill(1000.*(xptar-xptarT));
+ 	  Ztar_Cnts[found_nf]++;
+ 	  Ztar_Ys_Delta_Cnts[found_nf][found_nd][found_ny]++;
++	  eventWeights.push_back(fitWeight);
+ 	  nfit++;
+ 	  xfptrue.push_back( xfp );
+ 	  yfptrue.push_back( yfp );
+@@ -608,22 +617,33 @@
+     if( ifit % 5000 == 0 ) cout << ifit << endl;
+     for( int ipar=0; ipar<npar; ipar++){
+       for( int jpar=0; jpar<npar; jpar++){
+-      	Ay[ipar][jpar] += lambda[ipar][ifit] * lambda[jpar][ifit];
++      	Ay[ipar][jpar] += lambda[ipar][ifit] * lambda[jpar][ifit] * eventWeights.at(ifit);
+       }
+     }
+   }
+  
+   TDecompSVD Ay_svd(Ay);
+-  bool ok;
+-  ok = Ay_svd.Solve( b_ytar );
++  bool ok; bool ytarOK, yptarOK, xptarOK;
++  ok = Ay_svd.Solve( b_ytar ); ytarOK=ok;
+   cout << "ytar solution ok = " << ok << endl;
+   //b_ytar.Print();
+-  ok = Ay_svd.Solve( b_yptar );
++  ok = Ay_svd.Solve( b_yptar ); yptarOK=ok;
+   cout << "yptar solution ok = " << ok << endl;
+   //b_yptar.Print();
+-  ok = Ay_svd.Solve( b_xptar );
++  ok = Ay_svd.Solve( b_xptar ); xptarOK=ok;
+   cout << "xptar solution ok = " << ok << endl;
+   //b_xptar.Print();
++  const TVectorD singular=Ay_svd.GetSig();
++  const double tol=Ay_svd.GetTol(), cutoff=tol*singular[0];
++  int retained=0;
++  ofstream spectrum(Form("%s/normal_matrix_spectrum.tsv",outputDir.Data()));
++  spectrum << "mode\tsingular_value\tretained\n" << setprecision(17);
++  for (int k=0;k<npar;k++) { if(singular[k]>cutoff) retained++; spectrum << k << "\t" << singular[k] << "\t" << (singular[k]>cutoff) << "\n"; }
++  ofstream solver(Form("%s/solver.json",outputDir.Data()));
++  solver << setprecision(17) << "{\"events\":" << nfit << ",\"terms\":" << npar
++    << ",\"retained\":" << retained << ",\"root_tolerance\":" << tol << ",\"cutoff\":" << cutoff
++    << ",\"ytar_ok\":" << ytarOK << ",\"yptar_ok\":" << yptarOK << ",\"xptar_ok\":" << xptarOK << "}\n";
++
+ 
+ 
+   ///////////////////////////////////////////////////////////////////////////////////////////////
+@@ -650,7 +670,7 @@
+ 	  }
+ 	  hytarnew->Fill((ytarnew+ytar_xtar)*100.);
+ 	  hyptarnew->Fill(yptarnew+yptar_xtar);
+-	  hxptarnew->Fill(xptarnew);
++	  hxptarnew->Fill(xptarnew+xptar_xtar);
+ 	  hytarnewdiff->Fill((ytarnew+ytar_xtar)*100.-ytartrue.at(ifit));
+ 	  hyptarnewdiff->Fill(1000*(yptarnew+yptar_xtar-yptartrue.at(ifit)));
+ 	  hxptarnewdiff->Fill(1000*(xptarnew+xptar_xtar-xptartrue.at(ifit)));
+@@ -772,6 +792,8 @@
+          outputDir.Data(), tag.Data());
+   TFile foutQA(qaRoot, "RECREATE");
+   hallc::writeProfile(spec);
++  Ay.Write("normal_matrix");
++  b_xptar.Write("solution_xptar"); b_ytar.Write("solution_ytar"); b_yptar.Write("solution_yptar");
+   hytardiff->Write(); hyptardiff->Write(); hxptardiff->Write();
+   hytarnewdiff->Write(); hyptarnewdiff->Write(); hxptarnewdiff->Write();
+   hytar->Write(); hyptar->Write(); hxptar->Write();

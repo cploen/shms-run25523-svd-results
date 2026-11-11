@@ -1,0 +1,5 @@
+numpy==2.3.5
+uproot==5.7.7
+ROOT==0.1a12
+PyMuPDF==1.26.6
+pypdf==6.10.0

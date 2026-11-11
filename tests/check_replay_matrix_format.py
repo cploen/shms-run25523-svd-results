@@ -15,6 +15,7 @@ def main():
     parser.add_argument('--hcana',required=True,type=Path)
     parser.add_argument('--nps-replay',type=Path)
     parser.add_argument('--report',type=Path)
+    parser.add_argument('--matrix',type=Path,action='append',default=[],help='Additional emitted matrices to validate with the actual reader')
     args=parser.parse_args()
     repo=Path(__file__).resolve().parents[1]
     source_path=args.hcana/'src/THcHallCSpectrometer.cxx'
@@ -70,6 +71,7 @@ int main(int argc,char** argv) {
             results.append({'file':str(path.relative_to(repo)) if path.is_relative_to(repo) else str(path),'terms_read':len(loaded),'exact_coefficients_and_exponents':True})
         paths=[repo/'weighted/matrices/nps_shms_newfit_25523_legacy.dat',repo/'unweighted/matrices/nps_shms_newfit_25523_unweighted.dat']
         paths.append(repo/'config/base_matrix.dat')
+        paths.extend(args.matrix)
         if args.nps_replay:
             paths += [args.nps_replay/'DATFILES'/name for name in ['nps_hms_optics_5p878_ang.dat','nps_hms_optics_6p117_ang.dat','nps_hms_optics_6p667_ang.dat']]
         for path in paths:

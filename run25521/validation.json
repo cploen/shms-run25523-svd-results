@@ -1,0 +1,174 @@
+{
+  "ROOT_version": "6.40.00",
+  "full_HCANA_replay": false,
+  "cases": {
+    "unweighted": {
+      "matrix_sha256": "6405800b41d8798eb7dc170b59e21cf63fd02cec728e47db4cb0d9e469b815ce",
+      "separator_and_newline_checks": true,
+      "rows": 132,
+      "normal_element_checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "cpp_value": 73188.0,
+          "independent_sum": 73188.0,
+          "absolute_difference": 0.0
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "cpp_value": -1793.1056556223118,
+          "independent_sum": -1793.1056556223634,
+          "absolute_difference": 5.161382432561368e-11
+        },
+        {
+          "i": 0,
+          "j": 125,
+          "cpp_value": 8.760449342698293e-05,
+          "independent_sum": 8.760449342698267e-05,
+          "absolute_difference": 2.574980159653073e-19
+        },
+        {
+          "i": 4,
+          "j": 18,
+          "cpp_value": -0.008944769869341531,
+          "independent_sum": -0.008944769869341626,
+          "absolute_difference": 9.540979117872439e-17
+        },
+        {
+          "i": 35,
+          "j": 35,
+          "cpp_value": 0.29978150854977087,
+          "independent_sum": 0.2997815085497806,
+          "absolute_difference": 9.71445146547012e-15
+        },
+        {
+          "i": 74,
+          "j": 102,
+          "cpp_value": -2.1872855403434524e-08,
+          "independent_sum": -2.1872855403434573e-08,
+          "absolute_difference": 4.963083675318166e-23
+        },
+        {
+          "i": 125,
+          "j": 125,
+          "cpp_value": 8.085724407532903e-12,
+          "independent_sum": 8.085724407533134e-12,
+          "absolute_difference": 2.310289601466464e-25
+        }
+      ],
+      "pdf_pages": {
+        "plots/fit_opt_matrix_25521_unweighted_new_matrix_diff.pdf": 1,
+        "plots/fit_opt_matrix_25521_unweighted_old_matrix_diff.pdf": 1,
+        "plots/new/25521_new_xptar_residuals.pdf": 18,
+        "plots/new/25521_new_xptar_residuals_by_sieve.pdf": 3,
+        "plots/new/25521_new_yptar_residuals.pdf": 3,
+        "plots/new/25521_new_yptar_residuals_by_sieve.pdf": 3,
+        "plots/new/25521_new_ytar_residuals.pdf": 3,
+        "plots/new/25521_new_ytar_residuals_by_sieve.pdf": 3,
+        "plots/new/25521_new_ytar_residuals_delta.pdf": 1,
+        "plots/old/25521_old_xptar_residuals.pdf": 18,
+        "plots/old/25521_old_xptar_residuals_by_sieve.pdf": 3,
+        "plots/old/25521_old_yptar_residuals.pdf": 3,
+        "plots/old/25521_old_yptar_residuals_by_sieve.pdf": 3,
+        "plots/old/25521_old_ytar_residuals.pdf": 3,
+        "plots/old/25521_old_ytar_residuals_by_sieve.pdf": 3,
+        "plots/old/25521_old_ytar_residuals_delta.pdf": 1
+      },
+      "diagnostic_entries": {
+        "old_xptar": 73188,
+        "old_yptar": 73188,
+        "old_ytar": 73188,
+        "new_xptar": 73188,
+        "new_yptar": 73188,
+        "new_ytar": 73188
+      },
+      "emitted_coefficients_match_native_solutions_at_legacy_9_digit_precision": true,
+      "matching_events_old_new": true
+    },
+    "weighted": {
+      "matrix_sha256": "b3e50906bff9abdc9088fd95040044030315ea95151ded720de7865a57be32fc",
+      "separator_and_newline_checks": true,
+      "rows": 132,
+      "normal_element_checks": [
+        {
+          "i": 0,
+          "j": 0,
+          "cpp_value": 73188.00000000643,
+          "independent_sum": 73188.0,
+          "absolute_difference": 6.4319465309381485e-09
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "cpp_value": 785.416043350299,
+          "independent_sum": 785.4160433503148,
+          "absolute_difference": 1.5802470443304628e-11
+        },
+        {
+          "i": 0,
+          "j": 125,
+          "cpp_value": 2.2147219701160757e-05,
+          "independent_sum": 2.214721970116068e-05,
+          "absolute_difference": 7.792703114739563e-20
+        },
+        {
+          "i": 4,
+          "j": 18,
+          "cpp_value": -0.011539474941953171,
+          "independent_sum": -0.011539474941953164,
+          "absolute_difference": 6.938893903907228e-18
+        },
+        {
+          "i": 35,
+          "j": 35,
+          "cpp_value": 0.4341648659280082,
+          "independent_sum": 0.43416486592801484,
+          "absolute_difference": 6.661338147750939e-15
+        },
+        {
+          "i": 74,
+          "j": 102,
+          "cpp_value": -2.851671456630847e-08,
+          "independent_sum": -2.8516714566308578e-08,
+          "absolute_difference": 1.0918784085699965e-22
+        },
+        {
+          "i": 125,
+          "j": 125,
+          "cpp_value": 6.827562265862158e-12,
+          "independent_sum": 6.8275622658622324e-12,
+          "absolute_difference": 7.431700815906108e-26
+        }
+      ],
+      "pdf_pages": {
+        "plots/fit_opt_matrix_25521_weighted_new_matrix_diff.pdf": 1,
+        "plots/fit_opt_matrix_25521_weighted_old_matrix_diff.pdf": 1,
+        "plots/new/25521_new_xptar_residuals.pdf": 18,
+        "plots/new/25521_new_xptar_residuals_by_sieve.pdf": 3,
+        "plots/new/25521_new_yptar_residuals.pdf": 3,
+        "plots/new/25521_new_yptar_residuals_by_sieve.pdf": 3,
+        "plots/new/25521_new_ytar_residuals.pdf": 3,
+        "plots/new/25521_new_ytar_residuals_by_sieve.pdf": 3,
+        "plots/new/25521_new_ytar_residuals_delta.pdf": 1,
+        "plots/old/25521_old_xptar_residuals.pdf": 18,
+        "plots/old/25521_old_xptar_residuals_by_sieve.pdf": 3,
+        "plots/old/25521_old_yptar_residuals.pdf": 3,
+        "plots/old/25521_old_yptar_residuals_by_sieve.pdf": 3,
+        "plots/old/25521_old_ytar_residuals.pdf": 3,
+        "plots/old/25521_old_ytar_residuals_by_sieve.pdf": 3,
+        "plots/old/25521_old_ytar_residuals_delta.pdf": 1
+      },
+      "diagnostic_entries": {
+        "old_xptar": 73188,
+        "old_yptar": 73188,
+        "old_ytar": 73188,
+        "new_xptar": 73188,
+        "new_yptar": 73188,
+        "new_ytar": 73188
+      },
+      "emitted_coefficients_match_native_solutions_at_legacy_9_digit_precision": true,
+      "matching_events_old_new": true
+    }
+  }
+}

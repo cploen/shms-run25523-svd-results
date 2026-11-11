@@ -1,0 +1,103 @@
+{
+  "method": "Supplied weights",
+  "fit_events": 73188,
+  "held_out_events": 0,
+  "selection_identical_between_cases": true,
+  "external_offsets_for_output_matrix": [
+    0,
+    0,
+    0
+  ],
+  "offset_subtracted_before_fit": false,
+  "delta_and_xtar_coefficients_preserved": true,
+  "metrics_units": [
+    "mrad",
+    "mm",
+    "mrad"
+  ],
+  "old_at_same_geometric_xtar": {
+    "rmse_mrad_mm_mrad": [
+      2.5572652505124664,
+      6.545032087869708,
+      2.2717534877102
+    ],
+    "supplied_weight_rmse_mrad_mm_mrad": [
+      2.2665286813122383,
+      5.999332066397757,
+      2.202512412871315
+    ],
+    "mean_mrad_mm_mrad": [
+      -0.3550828462179367,
+      1.1268445344190363,
+      -0.9310212830944878
+    ],
+    "abs_p95_mrad_mm_mrad": [
+      8.028346545493674,
+      15.745678778823377,
+      4.6042243708361195
+    ]
+  },
+  "new_at_same_geometric_xtar": {
+    "rmse_mrad_mm_mrad": [
+      2.0874334399313246,
+      4.391511813429518,
+      1.5185766459066092
+    ],
+    "supplied_weight_rmse_mrad_mm_mrad": [
+      1.8711460817105534,
+      3.9593774954059375,
+      1.4303743960336934
+    ],
+    "mean_mrad_mm_mrad": [
+      -0.06980077654917412,
+      0.0479872519504798,
+      -0.002316538548129522
+    ],
+    "abs_p95_mrad_mm_mrad": [
+      4.725048342893072,
+      9.489192646464733,
+      3.0019115727466334
+    ]
+  },
+  "original_stored_reconstruction": {
+    "rmse_mrad_mm_mrad": [
+      2.582970298865724,
+      6.548349326043626,
+      2.275526569273576
+    ],
+    "supplied_weight_rmse_mrad_mm_mrad": [
+      2.2682151463579525,
+      5.992712439105207,
+      2.204253178878963
+    ],
+    "mean_mrad_mm_mrad": [
+      -0.3640057291786419,
+      1.1509247754360572,
+      -0.9369204911005846
+    ],
+    "abs_p95_mrad_mm_mrad": [
+      8.116705906355172,
+      15.781440272110752,
+      4.617985435827302
+    ]
+  },
+  "solver": {
+    "events": 73188,
+    "terms": 126,
+    "retained": 95,
+    "root_tolerance": 2.220446049250313e-16,
+    "cutoff": 1.6265323117244652e-11,
+    "ytar_ok": 1,
+    "yptar_ok": 1,
+    "xptar_ok": 1
+  },
+  "full_HCANA_replay": false,
+  "automatic_summary_histogram_entries": {
+    "hytardiff": 73188.0,
+    "hyptardiff": 73188.0,
+    "hxptardiff": 73188.0,
+    "hytarnewdiff": 73188.0,
+    "hyptarnewdiff": 73188.0,
+    "hxptarnewdiff": 73188.0
+  }
+}

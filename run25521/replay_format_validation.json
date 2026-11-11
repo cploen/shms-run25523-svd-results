@@ -1,0 +1,57 @@
+{
+  "test": "verbatim HCANA ReadDatabase matrix-reader block plus verbatim current writer block",
+  "hcana_commit": "ce5f975288010984a6d66fd3bde4bee95fc36ba2",
+  "reader_block_sha256": "90066ae0ae612e7bfdd7dc317198387981264a21f79ea29ed1049640e120552e",
+  "fitter_sha256": "fa02db9c98fc0e27ba4172b94396205fc1e89710d4dbf3a59a66968a38bf22bf",
+  "positive_cases": [
+    {
+      "file": "weighted/matrices/nps_shms_newfit_25523_legacy.dat",
+      "terms_read": 132,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "unweighted/matrices/nps_shms_newfit_25523_unweighted.dat",
+      "terms_read": 132,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "config/base_matrix.dat",
+      "terms_read": 131,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "run25521/unweighted/matrices/nps_shms_newfit_25521_unweighted.dat",
+      "terms_read": 132,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "run25521/weighted/matrices/nps_shms_newfit_25521_weighted.dat",
+      "terms_read": 132,
+      "exact_coefficients_and_exponents": true
+    },
+    {
+      "file": "/tmp/tmpbyf4ap3e/emitted.dat",
+      "terms_read": 3,
+      "exact_coefficients_and_exponents": true
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "missing_opening_separator",
+      "rejected": true
+    },
+    {
+      "case": "two_leading_spaces",
+      "rejected": true
+    },
+    {
+      "case": "underscores",
+      "rejected": true
+    },
+    {
+      "case": "missing_final_newline",
+      "rejected": true
+    }
+  ],
+  "full_HCANA_replay_performed": false
+}

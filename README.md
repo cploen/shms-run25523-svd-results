@@ -1,5 +1,7 @@
 # SHMS run 25523: weighted and original unweighted SVD results
 
+**New: [Run 25521 foil-balanced weighted and unweighted results](run25521/README.md).** Run 25523 results below are preserved.
+
 Two distinct fits are retained here. Every PDF page is labeled by its method.
 
 | | [Supplied weights](weighted/REPORT.md) | [Unweighted legacy fit](unweighted/REPORT.md) |
