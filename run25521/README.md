@@ -63,6 +63,10 @@ That original suite has 16 PDFs / 70 pages per case. Every page carries its neut
 The legacy plot histograms are event-count diagnostics, without fit weights;
 weighted RMSE is separately reported in the JSON.
 
+**[Audit: recorded event order and the −6% delta step](SELECTION_ORDER_AUDIT.md).**
+The step is mainly introduced by the native bin cap, before the additional
+foil-total balancing; both selections preserve chronological order.
+
 ## Available, eligible and fitted populations
 
 | Foil label | Nominal z (cm) | Available | Eligible before cap | After native bin cap | Fitted in each case |

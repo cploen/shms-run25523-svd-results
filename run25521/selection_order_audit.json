@@ -1,0 +1,115 @@
+{
+  "source_entries_strictly_increasing": true,
+  "selected_indices_strictly_increasing": true,
+  "balanced_tree_provenance_exactly_matches_selected_source_order": true,
+  "single_pass_native_bin_and_foil_cap_scan_exactly_matches_two_stage_preparation": true,
+  "randomization": false,
+  "delta_sorting": false,
+  "foil_cap": 24396,
+  "foil_counts": {
+    "0": {
+      "available": 34429,
+      "eligible": 31312,
+      "native_bin_capped": 24648,
+      "fitted": 24396,
+      "removed_by_extra_foil_total_cap": 252,
+      "last_selected_input_row_zero_based": 104244,
+      "last_selected_source_full_entry": 512582,
+      "last_native_source_full_entry": 521275
+    },
+    "1": {
+      "available": 33216,
+      "eligible": 31667,
+      "native_bin_capped": 24396,
+      "fitted": 24396,
+      "removed_by_extra_foil_total_cap": 0,
+      "last_selected_input_row_zero_based": 106054,
+      "last_selected_source_full_entry": 521268,
+      "last_native_source_full_entry": 521268
+    },
+    "2": {
+      "available": 38413,
+      "eligible": 37030,
+      "native_bin_capped": 27710,
+      "fitted": 24396,
+      "removed_by_extra_foil_total_cap": 3314,
+      "last_selected_input_row_zero_based": 86978,
+      "last_selected_source_full_entry": 427832,
+      "last_native_source_full_entry": 521259
+    }
+  },
+  "near_minus6_counts": [
+    {
+      "foil": null,
+      "delta_low": -7,
+      "delta_high": -6,
+      "available": 5172,
+      "eligible": 5172,
+      "native_bin_capped": 2630,
+      "fitted": 2595
+    },
+    {
+      "foil": null,
+      "delta_low": -6,
+      "delta_high": -5,
+      "available": 5175,
+      "eligible": 5175,
+      "native_bin_capped": 4641,
+      "fitted": 4425
+    },
+    {
+      "foil": 0,
+      "delta_low": -7,
+      "delta_high": -6,
+      "available": 1565,
+      "eligible": 1565,
+      "native_bin_capped": 840,
+      "fitted": 839
+    },
+    {
+      "foil": 0,
+      "delta_low": -6,
+      "delta_high": -5,
+      "available": 1566,
+      "eligible": 1566,
+      "native_bin_capped": 1452,
+      "fitted": 1442
+    },
+    {
+      "foil": 1,
+      "delta_low": -7,
+      "delta_high": -6,
+      "available": 1668,
+      "eligible": 1668,
+      "native_bin_capped": 865,
+      "fitted": 865
+    },
+    {
+      "foil": 1,
+      "delta_low": -6,
+      "delta_high": -5,
+      "available": 1678,
+      "eligible": 1678,
+      "native_bin_capped": 1553,
+      "fitted": 1553
+    },
+    {
+      "foil": 2,
+      "delta_low": -7,
+      "delta_high": -6,
+      "available": 1939,
+      "eligible": 1939,
+      "native_bin_capped": 925,
+      "fitted": 891
+    },
+    {
+      "foil": 2,
+      "delta_low": -6,
+      "delta_high": -5,
+      "available": 1931,
+      "eligible": 1931,
+      "native_bin_capped": 1636,
+      "fitted": 1430
+    }
+  ]
+}
