@@ -7,6 +7,16 @@ weight definition and conventions, with the three foil positions from this ZIP.
 
 **[Requested NPS_HMS_OPTICS legacy macros: per-foil old/new reports](NPS_LEGACY_DIAGNOSTICS.md).**
 
+**All available handoff events, without selection or balancing:**
+[Delta histogram PDF](plots/25521_available_delta_histograms.pdf) ·
+[PNG](plots/25521_available_delta_histograms.png) ·
+[Counts CSV](plots/25521_available_delta_histogram_counts.csv).
+These use every one of the 106,058 supplied events: 34,429 at +10 cm, 33,216
+at 0 cm, and 38,413 at −10 cm. No delta cut, native bin cap, equal-foil selection,
+historical split, review flag, or weight is applied. All delta values fit within
+[−20,34)% using 1%-wide bins. This does not include events absent from the ZIP.
+The plots below remain the separate, balanced fitted-sample distributions.
+
 **Standalone delta histograms:** [PDF](plots/25521_delta_histograms.pdf) ·
 [PNG](plots/25521_delta_histograms.png) · [Bin counts CSV](plots/25521_delta_histogram_counts.csv).
 One panel combines all 73,188 fitted events; the other three show the 24,396
