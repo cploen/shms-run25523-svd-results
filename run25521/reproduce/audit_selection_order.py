@@ -3,7 +3,7 @@ from pathlib import Path
 import sys,json
 import numpy as np,uproot
 repo=Path(__file__).resolve().parents[2];out=repo/'run25521';source=Path(sys.argv[1]);work=Path(sys.argv[2])
-p=np.load(source/'data_1.npz',allow_pickle=False);s=np.load(work/'selection.npz');n=len(p['run']);idx=s['indices'];d=p['delta_percent'];foil=p['foil_id'];entry=p['source_full_entry'];eligible=s['eligible'];native=s['native'];selected=np.zeros(n,bool);selected[idx]=True
+loaded=np.load(source/'data_1.npz',allow_pickle=False);p={k:loaded[k] for k in loaded.files};s=np.load(work/'selection.npz');n=len(p['run']);idx=s['indices'];d=p['delta_percent'];foil=p['foil_id'];entry=p['source_full_entry'];eligible=s['eligible'];native=s['native'];selected=np.zeros(n,bool);selected[idx]=True
 assert np.all(np.diff(entry)>0) and np.all(np.diff(idx)>0)
 limit=24396;edges=np.array([-25.,-6.,-2.,2.,6.,10.,22.]);cells=np.zeros((3,6,11),int);totals=np.zeros(3,int);singlepass=[]
 for i in range(n):
