@@ -63,6 +63,10 @@ That original suite has 16 PDFs / 70 pages per case. Every page carries its neut
 The legacy plot histograms are event-count diagnostics, without fit weights;
 weighted RMSE is separately reported in the JSON.
 
+**[SHMS reference comparison: current slices differ from upstream examples](SHMS_DELTA_SLICE_COMPARISON.md).**
+The upstream C macros use centers and half-widths; the customized local fitter
+uses edges. No refit was made in this source check.
+
 **[Audit: recorded event order and the −6% delta step](SELECTION_ORDER_AUDIT.md).**
 The step is mainly introduced by the native bin cap, before the additional
 foil-total balancing; both selections preserve chronological order.

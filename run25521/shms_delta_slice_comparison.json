@@ -1,0 +1,160 @@
+{
+  "current_run25521_edges": [
+    -25,
+    -6,
+    -2,
+    2,
+    6,
+    10,
+    22
+  ],
+  "current_run25521_effective_first_interval": [
+    -15,
+    -6
+  ],
+  "classic_shared_zwertz_and_a1n_intervals": [
+    [
+      -12.0,
+      -10.0
+    ],
+    [
+      -10.0,
+      -6.0
+    ],
+    [
+      -6.0,
+      -2.0
+    ],
+    [
+      -2.0,
+      2.0
+    ],
+    [
+      2.0,
+      6.0
+    ],
+    [
+      6.0,
+      10.0
+    ],
+    [
+      10.0,
+      25.0
+    ]
+  ],
+  "zwertz_run22045": {
+    "repository": "zwertz/SHMS_OPTICS",
+    "path": "DATfiles/list_of_optics_run.dat",
+    "run": 22045,
+    "centers": [
+      -9.0,
+      -4.0,
+      0.0,
+      6.0,
+      17.5
+    ],
+    "half_widths": [
+      3.0,
+      2.0,
+      2.0,
+      4.0,
+      7.5
+    ],
+    "intervals_in_file_order": [
+      [
+        -12.0,
+        -6.0
+      ],
+      [
+        -6.0,
+        -2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        2.0,
+        10.0
+      ],
+      [
+        10.0,
+        25.0
+      ]
+    ]
+  },
+  "a1n_run10776": {
+    "repository": "hszumila/shms_optics_a1n",
+    "path": "list_of_optics_run.dat",
+    "run": 10776,
+    "centers": [
+      -11.5,
+      -10.5,
+      -9.0,
+      -7.0,
+      -4.0,
+      0.0,
+      4.0,
+      8.0,
+      17.5,
+      -12.5
+    ],
+    "half_widths": [
+      0.5,
+      0.5,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      7.5,
+      0.5
+    ],
+    "intervals_in_file_order": [
+      [
+        -12.0,
+        -11.0
+      ],
+      [
+        -11.0,
+        -10.0
+      ],
+      [
+        -10.0,
+        -8.0
+      ],
+      [
+        -8.0,
+        -6.0
+      ],
+      [
+        -6.0,
+        -2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        2.0,
+        6.0
+      ],
+      [
+        6.0,
+        10.0
+      ],
+      [
+        10.0,
+        25.0
+      ],
+      [
+        -13.0,
+        -12.0
+      ]
+    ]
+  },
+  "selection_semantics": "lower bound inclusive, upper exclusive; assignment by center +/- half_width in upstream C macros",
+  "run25521_definition_found_in_these_files": false,
+  "no_fit_or_selection_changed": true
+}

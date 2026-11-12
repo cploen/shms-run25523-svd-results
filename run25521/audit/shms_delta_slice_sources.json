@@ -1,0 +1,398 @@
+[
+  {
+    "repository": "zwertz/SHMS_OPTICS",
+    "commit": "350c7ee59654dbe31a6791b941a317ac2607c0e3",
+    "path": "fit_opt_matrix.C",
+    "blob_sha": "d70b7671d1d5a10034fb107bc2638bee1b5a55ad",
+    "url": "https://github.com/zwertz/SHMS_OPTICS/blob/350c7ee59654dbe31a6791b941a317ac2607c0e3/fit_opt_matrix.C",
+    "excerpts": [
+      {
+        "line": 37,
+        "text": "  Int_t MaxPerBin=200;"
+      },
+      {
+        "line": 38,
+        "text": "  Int_t MaxZtarPerBin=10000;"
+      },
+      {
+        "line": 222,
+        "text": "  static const Int_t ndelcut=7;"
+      },
+      {
+        "line": 223,
+        "text": "  Double_t delcut[ndelcut]={-11.,-8.,-4.,0,4.,8.,17.5};"
+      },
+      {
+        "line": 224,
+        "text": "  Double_t delwidth[ndelcut]={1.0,2.0,2.0,2.0,2.0,2.0,7.5};"
+      },
+      {
+        "line": 232,
+        "text": "    Ztar_Ys_Delta_Cnts[nf].resize(ndelcut);"
+      },
+      {
+        "line": 233,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 239,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 267,
+        "text": "      if ( delta>-15. &&  delta<30. ) {"
+      },
+      {
+        "line": 276,
+        "text": "\tfor (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 277,
+        "text": "\t  if (delta >=delcut[nd]-delwidth[nd] && delta <delcut[nd]+delwidth[nd]) found_nd=nd;"
+      },
+      {
+        "line": 285,
+        "text": "\tif (good_bin && nfit < nfit_max && Ztar_Ys_Delta_Cnts[found_nf][found_nd][found_ny]< MaxPerBin && Ztar_Cnts[found_nf]< MaxZtarPerBin) {"
+      },
+      {
+        "line": 343,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 344,
+        "text": "      cout << \" Ndelta = \" << delcut[nd] << endl;       "
+      }
+    ]
+  },
+  {
+    "repository": "zwertz/SHMS_OPTICS",
+    "commit": "350c7ee59654dbe31a6791b941a317ac2607c0e3",
+    "path": "fit_opt_matrix_v2.C",
+    "blob_sha": "d0d2fed809a3cb2412d60ed7834060a225a0f2ea",
+    "url": "https://github.com/zwertz/SHMS_OPTICS/blob/350c7ee59654dbe31a6791b941a317ac2607c0e3/fit_opt_matrix_v2.C",
+    "excerpts": [
+      {
+        "line": 50,
+        "text": "  Int_t MaxPerBin=300;"
+      },
+      {
+        "line": 51,
+        "text": "  Int_t MaxZtarPerBin=9500;"
+      },
+      {
+        "line": 254,
+        "text": "    Int_t ndelcut=-1;"
+      },
+      {
+        "line": 255,
+        "text": "    vector<Double_t > delcut;"
+      },
+      {
+        "line": 256,
+        "text": "    vector<Double_t > delwidth;"
+      },
+      {
+        "line": 279,
+        "text": "\tndelcut = temp.Atoi();"
+      },
+      {
+        "line": 286,
+        "text": "\tfor (Int_t nd=0;nd<ndelcut-1;nd++) {"
+      },
+      {
+        "line": 288,
+        "text": "\t  delcut.push_back(temp.Atof());"
+      },
+      {
+        "line": 291,
+        "text": "\tdelcut.push_back(temp.Atof());"
+      },
+      {
+        "line": 292,
+        "text": "\tfor (Int_t nw=0;nw<ndelcut-1;nw++) {"
+      },
+      {
+        "line": 294,
+        "text": "\t  delwidth.push_back(temp.Atof());"
+      },
+      {
+        "line": 297,
+        "text": "\tdelwidth.push_back(temp.Atof());"
+      },
+      {
+        "line": 332,
+        "text": "    vector<Int_t> Max_Per_Run_Per_Foil;"
+      },
+      {
+        "line": 335,
+        "text": "    Max_Per_Run_Per_Foil.resize(maxFoils);"
+      },
+      {
+        "line": 345,
+        "text": "      Max_Per_Run_Per_Foil[nf] = 9500;//check this number?"
+      },
+      {
+        "line": 374,
+        "text": "      if ( delta>-15. &&  delta<30. ) {"
+      },
+      {
+        "line": 385,
+        "text": "\tfor (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 386,
+        "text": "\t  if (delta >=delcut[nd]-delwidth[nd] && delta <delcut[nd]+delwidth[nd]) {"
+      },
+      {
+        "line": 397,
+        "text": "\tif (good_bin && nfit < nfit_max && Ztar_Ys_Delta_Cnts[found_nf][found_nd][found_ny]< MaxPerBin && Ztar_Cnts[found_nf]< MaxZtarPerBin && Ztar_Cnts[found_nf]<Max_Per_Run_Per_Foil[found_nf]) {"
+      },
+      {
+        "line": 457,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 458,
+        "text": "      cout << \" Ndelta = \" << delcut[nd] << endl;       "
+      }
+    ]
+  },
+  {
+    "repository": "zwertz/SHMS_OPTICS",
+    "commit": "350c7ee59654dbe31a6791b941a317ac2607c0e3",
+    "path": "DATfiles/list_of_optics_run_test.dat",
+    "blob_sha": "3997f76f28302b73fb9a6c0de9dafb18bd7e3428",
+    "url": "https://github.com/zwertz/SHMS_OPTICS/blob/350c7ee59654dbe31a6791b941a317ac2607c0e3/DATfiles/list_of_optics_run_test.dat",
+    "full_text": "RunNum,OpticsID,CentralAngle,NumFoil,SieveFlag,ndelcut\nztar_foil\ndelcut\ndelwidth\n\nRUN: 22044, p=3.6 GeV/c, Mag, SHMS_Angle = 17.005, Carbon 3%\n22044,22044,17.0,1,1,6,0.0\n0.0\n-10,-8.,-5.,0.,5.,10.\n\nRUN: 22045, p=3.6 GeV/c, Mag, SHMS_Angle = 17.005, Carbon +/- 10 cm\n22045,22045,17.005,3,1,5\n10.0,0.0,-10.0\n-4.,0.,4.,8.,17.5\n2.,2.,2.,2.,7.5",
+    "excerpts": [
+      {
+        "line": 1,
+        "text": "RunNum,OpticsID,CentralAngle,NumFoil,SieveFlag,ndelcut"
+      },
+      {
+        "line": 3,
+        "text": "delcut"
+      },
+      {
+        "line": 4,
+        "text": "delwidth"
+      }
+    ]
+  },
+  {
+    "repository": "hszumila/shms_optics_a1n",
+    "commit": "cf7f20a8f838493051c4bd5ebc7c21f983a764fd",
+    "path": "list_of_optics_run.dat",
+    "blob_sha": "2095881f82fd706568ebfb3bde25098c07fab5d1",
+    "url": "https://github.com/hszumila/shms_optics_a1n/blob/cf7f20a8f838493051c4bd5ebc7c21f983a764fd/list_of_optics_run.dat",
+    "full_text": "10301,10301_10333,30.0,3,1,7\n13.34,0.0,-20.\n-11.,-8.,-4.,0,4.,8.,17.5\n1.0,2.0,2.0,2.0,2.0,2.0,7.5\n10776,10776_10780,11.0,5,1,10\n20.,13.34,0.0,-20.,-30.\n-11.5,-10.5,-9.,-7,-4.,0.,4.,8.,17.5,-12.5\n0.5,0.5,1.,1.,2.,2.,2.,2.,7.5,0.5\n10786,10786,14.5,5,1,10\n20.,13.34,0.0,-20.,-30.\n-11.5,-10.5,-9.,-7,-4.,0.,4.,8.,17.5,-12.5\n.5,.5,1.,1.,2.,2.,2.,2.,7.5,0.5\n10790,10790_10795,18.0,5,1,10\n20.,13.34,0.0,-20.,-30.\n-11.5,-10.5,-9.,-7,-4.,0.,4.,8.,17.5,-12.5\n0.5,0.5,1.,1.,2.,2.,2.,2.,7.5,0.5\n9611,9611_9621,30.0,5,1,9\n20.,13.34,0.0,-20.,-30.\n-12.,-11.,-10.,-8.,-6.,-2.,2.,6.,10.,25.",
+    "excerpts": []
+  },
+  {
+    "repository": "hszumila/shms_optics_a1n",
+    "commit": "cf7f20a8f838493051c4bd5ebc7c21f983a764fd",
+    "path": "fit_opt_matrix.C",
+    "blob_sha": "d70b7671d1d5a10034fb107bc2638bee1b5a55ad",
+    "url": "https://github.com/hszumila/shms_optics_a1n/blob/cf7f20a8f838493051c4bd5ebc7c21f983a764fd/fit_opt_matrix.C",
+    "excerpts": [
+      {
+        "line": 37,
+        "text": "  Int_t MaxPerBin=200;"
+      },
+      {
+        "line": 38,
+        "text": "  Int_t MaxZtarPerBin=10000;"
+      },
+      {
+        "line": 222,
+        "text": "  static const Int_t ndelcut=7;"
+      },
+      {
+        "line": 223,
+        "text": "  Double_t delcut[ndelcut]={-11.,-8.,-4.,0,4.,8.,17.5};"
+      },
+      {
+        "line": 224,
+        "text": "  Double_t delwidth[ndelcut]={1.0,2.0,2.0,2.0,2.0,2.0,7.5};"
+      },
+      {
+        "line": 232,
+        "text": "    Ztar_Ys_Delta_Cnts[nf].resize(ndelcut);"
+      },
+      {
+        "line": 233,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 239,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 267,
+        "text": "      if ( delta>-15. &&  delta<30. ) {"
+      },
+      {
+        "line": 276,
+        "text": "\tfor (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 277,
+        "text": "\t  if (delta >=delcut[nd]-delwidth[nd] && delta <delcut[nd]+delwidth[nd]) found_nd=nd;"
+      },
+      {
+        "line": 285,
+        "text": "\tif (good_bin && nfit < nfit_max && Ztar_Ys_Delta_Cnts[found_nf][found_nd][found_ny]< MaxPerBin && Ztar_Cnts[found_nf]< MaxZtarPerBin) {"
+      },
+      {
+        "line": 343,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 344,
+        "text": "      cout << \" Ndelta = \" << delcut[nd] << endl;       "
+      }
+    ]
+  },
+  {
+    "repository": "hszumila/shms_optics_a1n",
+    "commit": "cf7f20a8f838493051c4bd5ebc7c21f983a764fd",
+    "path": "fit_opt_matrix_v2.C",
+    "blob_sha": "01f0aa4e816db1a9cb7577bebb5154abe9847584",
+    "url": "https://github.com/hszumila/shms_optics_a1n/blob/cf7f20a8f838493051c4bd5ebc7c21f983a764fd/fit_opt_matrix_v2.C",
+    "excerpts": [
+      {
+        "line": 49,
+        "text": "  Int_t MaxPerBin=200;"
+      },
+      {
+        "line": 50,
+        "text": "  Int_t MaxZtarPerBin=10000;"
+      },
+      {
+        "line": 213,
+        "text": "    Int_t ndelcut=-1;"
+      },
+      {
+        "line": 214,
+        "text": "    vector<Double_t > delcut;"
+      },
+      {
+        "line": 215,
+        "text": "    vector<Double_t > delwidth;"
+      },
+      {
+        "line": 238,
+        "text": "\tndelcut = temp.Atoi();"
+      },
+      {
+        "line": 245,
+        "text": "\tfor (Int_t nd=0;nd<ndelcut-1;nd++) {"
+      },
+      {
+        "line": 247,
+        "text": "\t  delcut.push_back(temp.Atof());"
+      },
+      {
+        "line": 250,
+        "text": "\tdelcut.push_back(temp.Atof());"
+      },
+      {
+        "line": 251,
+        "text": "\tfor (Int_t nw=0;nw<ndelcut-1;nw++) {"
+      },
+      {
+        "line": 253,
+        "text": "\t  delwidth.push_back(temp.Atof());"
+      },
+      {
+        "line": 256,
+        "text": "\tdelwidth.push_back(temp.Atof());"
+      },
+      {
+        "line": 298,
+        "text": "      Ztar_Ys_Delta_Cnts[nf].resize(ndelcut);"
+      },
+      {
+        "line": 299,
+        "text": "      for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 305,
+        "text": "      for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 333,
+        "text": "      if ( delta>-15. &&  delta<30. ) {"
+      },
+      {
+        "line": 342,
+        "text": "\tfor (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 343,
+        "text": "\t  if (delta >=delcut[nd]-delwidth[nd] && delta <delcut[nd]+delwidth[nd]) found_nd=nd;"
+      },
+      {
+        "line": 351,
+        "text": "\tif (good_bin && nfit < nfit_max && Ztar_Ys_Delta_Cnts[found_nf][found_nd][found_ny]< MaxPerBin && Ztar_Cnts[found_nf]< MaxZtarPerBin) {"
+      },
+      {
+        "line": 405,
+        "text": "    for (Int_t nd=0;nd<ndelcut;nd++) {"
+      },
+      {
+        "line": 406,
+        "text": "      cout << \" Ndelta = \" << delcut[nd] << endl;       "
+      }
+    ]
+  },
+  {
+    "repository": "hszumila/SHMS_optics",
+    "commit": "c7d70e88b0cf2d1d93359d941168ab8f35ab916e",
+    "path": "source/shms_optics.cpp",
+    "blob_sha": "d5994dbcfb829443b327a4f12e28fa1835a9416c",
+    "url": "https://github.com/hszumila/SHMS_optics/blob/c7d70e88b0cf2d1d93359d941168ab8f35ab916e/source/shms_optics.cpp",
+    "excerpts": [
+      {
+        "line": 529,
+        "text": "\t    ((event.delta<1&&(yTarPeaks.at(nFoils-1-iFoil).mean - 1.0*yTarPeaks.at(nFoils-1-iFoil).sigma <= event.yTar &&"
+      },
+      {
+        "line": 533,
+        "text": "\t    &&event.delta>-12"
+      },
+      {
+        "line": 761,
+        "text": "\t  ((event.delta<1&&(yTarPeaks.at(nFoils-1-iFoil).mean - 1.0*yTarPeaks.at(nFoils-1-iFoil).sigma <= event.yTar &&"
+      },
+      {
+        "line": 765,
+        "text": "\t  &&event.delta>-12"
+      },
+      {
+        "line": 794,
+        "text": "\t  nEventss.at(iFoil).at(iHole) > 50"
+      },
+      {
+        "line": 798,
+        "text": "      ++nEventss.at(iFoil).at(iHole);"
+      }
+    ]
+  },
+  {
+    "repository": "hszumila/SHMS_optics",
+    "commit": "c7d70e88b0cf2d1d93359d941168ab8f35ab916e",
+    "path": "source/data/setup_optics_Jan19.txt",
+    "blob_sha": "fd0f0198ad125fb2b292f2f6c7b80724f4367699",
+    "url": "https://github.com/hszumila/SHMS_optics/blob/c7d70e88b0cf2d1d93359d941168ab8f35ab916e/source/data/setup_optics_Jan19.txt",
+    "full_text": "newrun 1813\nfilelist shmsoptics/shms_replay_production_all_1813_-1.root shmsoptics/shms_replay_production_all_2234_-1.root\nbeampos 0.0 0.0 0.0 0.0\nthetaSHMS 22.05\nnfoil 3\nzfoil -10.0 0.0 10.0\nsieveslit 2\ncut P.cal.etracknorm>0.8&&P.gtr.dp<20&&P.gtr.dp>-12\nuse2017Corr 1\nTheta 22.05 22.0\n\nnewrun 1814\nfilelist shmsoptics/shms_replay_production_all_1814_-1.root shmsoptics/shms_replay_production_all_2233_-1.root\nbeampos 0.0 0.0 0.0 0.0\nthetaSHMS 22.05\nnfoil 3\nzfoil -10.0 0.0 10.0\nsieveslit 1\ncut P.cal.etracknorm>0.8&&P.gtr.dp<20&&P.gtr.dp>-12\nuse2017Corr 1\nTheta 22.05 22.0\n\nnewrun 1815\nfilelist shmsoptics/shms_replay_production_all_1815_-1.root shmsoptics/shms_replay_production_all_1816_-1.root shmsoptics/shms_replay_production_all_1819_-1.root shmsoptics/shms_replay_production_all_1820_-1.root shmsoptics/shms_replay_production_all_1821_-1.root shmsoptics/shms_replay_production_all_1822_-1.root\nbeampos 0.0 0.0 0.0 0.0\nthetaSHMS 30.065\nnfoil 2\nzfoil -5.0 5.0\nsieveslit 1\ncut P.cal.etracknorm>0.8&&P.gtr.dp<20&&P.gtr.dp>-12\nuse2017Corr 0\nTheta 30.065 30.065 30.065 30.065 30.065 30.065\n\nnewrun 1817\nfilelist shmsoptics/shms_replay_production_all_1817_-1.root shmsoptics/shms_replay_production_all_1818_-1.root shmsoptics/shms_replay_production_all_1823_-1.root shmsoptics/coin_replay_production_1914_-1.root shmsoptics/coin_replay_production_1915_-1.root shmsoptics/coin_replay_production_1916_-1.root shmsoptics/coin_replay_production_1917_-1.root shmsoptics/coin_replay_production_1918_-1.root shmsoptics/shms_replay_production_all_2235_-1.root shmsoptics/shms_replay_production_all_2236_-1.root shmsoptics/shms_replay_production_all_2237_-1.root shmsoptics/shms_replay_production_all_2238_-1.root shmsoptics/shms_replay_production_all_2239_-1.root\nbeampos 0.0 0.0 0.0 0.0\nthetaSHMS 30.065\nnfoil 3\nzfoil -10.0 0.0 10.0\nsieveslit 1\ncut P.cal.etracknorm>0.8&&P.gtr.dp<20&&P.gtr.dp>-12\nuse2017Corr 0\nTheta 30.065 30.065 30.065 30.075 30.075 30.075 30.075 30.075 30.02 30.02 30.02 30.02 30.02\n\nnewrun 1919\nfilelist shmsoptics/coin_replay_production_1919_-1.root\nbeampos 0.0 0.0 0.0 0.0\nthetaSHMS 22.0\nnfoil 2\nzfoil -5.0 5.0\nsieveslit 1\ncut P.cal.etracknorm>0.8&&P.gtr.dp<20&&P.gtr.dp>-12\nuse2017Corr 0\nTheta 22.0\n\nnewrun 6620\nfilelist shmsoptics/coin_replay_production_6620_1000000.root\nbeampos 0.0 0.0 0.0 0.0\nthetaSHMS 9.495\nnfoil 1\nzfoil 0.0\nsieveslit 1\ncut P.cal.etracknorm>0.8&&P.gtr.dp<20&&P.gtr.dp>-12\nuse2017Corr 0\nTheta 9.495\n\nendlist\nshms-2017-newfit3.dat\nshms-2019-opt.dat\n0.0 0.0\n6\n200 20000\n0.0\n0\n#4.8280702357E-05\n",
+    "excerpts": []
+  },
+  {
+    "repository": "zwertz/SHMS_OPTICS",
+    "commit": "350c7ee59654dbe31a6791b941a317ac2607c0e3",
+    "path": "DATfiles/list_of_optics_run.dat",
+    "blob_sha": "a0f73c4c7dbaa9bb5487765f61d5c5afae61fa3d",
+    "full_text": "RunNum,OpticsID,CentralAngle,NumFoil,SieveFlag,ndelcut\nztar_foil\ndelcut\ndelwidth\n\nRUN: 22044, p=3.6 GeV/c, Mag, SHMS_Angle = 17.005, Carbon 3%\n22044,22044,17.0,1,1,5\n0.0\n-4.,0.,4.,8.,17.5\n2.,2.,2.,2.,7.5\n\nRUN: 22045, p=3.6 GeV/c, Mag, SHMS_Angle = 17.005, Carbon +/- 10 cm\n22045,22045_22048,17.005,3,1,5\n10.0,0.0,-10.0\n-9.,-4.,0.,6.,17.5\n3.,2.,2.,4.,7.5\n\n\n-4.,0.,4.,8.,17.5\n2.,2.,2.,2.,7.5\n\n-8.,-4.,0.,4.,8.,17.5\n2.,2.,2.,2.,2.,7.5\n\n-8.,-4.,0.,6.,17.5\n2.,2.,2.,4.,7.5\n\n-8.,-4.,0.,7.5,19.\n2.,2.,2.,5.5,6.\n\n-9.,-4.,0.,6.,17.5\n3.,2.,2.,4.,7.5\n\n"
+  }
+]
