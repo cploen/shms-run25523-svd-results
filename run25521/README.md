@@ -7,6 +7,14 @@ weight definition and conventions, with the three foil positions from this ZIP.
 
 **[Requested NPS_HMS_OPTICS legacy macros: per-foil old/new reports](NPS_LEGACY_DIAGNOSTICS.md).**
 
+**Standalone delta histograms:** [PDF](plots/25521_delta_histograms.pdf) ·
+[PNG](plots/25521_delta_histograms.png) · [Bin counts CSV](plots/25521_delta_histogram_counts.csv).
+One panel combines all 73,188 fitted events; the other three show the 24,396
+events per foil separately. Bins are 1 percentage point wide, with unweighted
+event counts and no underflow or overflow. All three foil panels share a vertical
+scale. This single set applies to both fits; delta arrays and event ordering
+were verified identical. It describes the fitted sample, not the full 106,058-event handoff.
+
 **Before/after delta versus ytar:**
 [Unweighted PDF](unweighted/plots/comparison/25521_delta_vs_ytar_before_after.pdf) ·
 [Supplied weights PDF](weighted/plots/comparison/25521_delta_vs_ytar_before_after.pdf).
